@@ -116,7 +116,7 @@ def main() -> None:
         "loss": log,
     }
     (ROOT / "runs").mkdir(exist_ok=True)
-    (ROOT / "runs" / "train.json").write_text(json.dumps(run, indent=1) + "\n", encoding="utf-8")
+    (ROOT / "runs" / "train.json").write_text(json.dumps(run, indent=1) + "\n", encoding="utf-8", newline="\n")
     write_card(run)
     print(f"trained {trainable:,} of {total:,} parameters in {seconds} s, final loss {log[-1]['loss']}, adapter {run['adapter_bytes']:,} bytes")
 
@@ -153,7 +153,7 @@ def write_card(run: dict) -> None:
         "",
         "MIT licence for the adapter. The base model is Apache 2.0.",
     ]
-    (ADAPTER / "README.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (ADAPTER / "README.md").write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
 
 
 if __name__ == "__main__":

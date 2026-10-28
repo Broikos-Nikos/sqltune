@@ -57,14 +57,14 @@ def main() -> None:
     seconds = round(time.time() - t0, 1)
 
     (ROOT / "eval").mkdir(exist_ok=True)
-    (ROOT / "eval" / f"predictions-{name}.jsonl").write_text("".join(json.dumps(o, ensure_ascii=False) + "\n" for o in out), encoding="utf-8")
+    (ROOT / "eval" / f"predictions-{name}.jsonl").write_text("".join(json.dumps(o, ensure_ascii=False) + "\n" for o in out), encoding="utf-8", newline="\n")
     run = {
         "model": name, "base": BASE, "revision": REVISION, "adapter_sha256": adapter_sha,
         "questions": len(test), "batch": BATCH, "max_new_tokens": MAX_NEW, "decoding": "greedy", "seconds": seconds,
         "gpu": torch.cuda.get_device_name(0),
         "versions": {"python": platform.python_version(), "torch": torch.__version__, "transformers": transformers.__version__, "peft": peft.__version__},
     }
-    (ROOT / "eval" / f"run-{name}.json").write_text(json.dumps(run, indent=1) + "\n", encoding="utf-8")
+    (ROOT / "eval" / f"run-{name}.json").write_text(json.dumps(run, indent=1) + "\n", encoding="utf-8", newline="\n")
     print(f"{name}: {len(out)} answers in {seconds} s")
 
 
