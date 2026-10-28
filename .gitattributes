@@ -1,0 +1,4 @@
+# LF everywhere, so every file the gates read is byte for byte the same on every machine
+* text=auto eol=lf
+*.png binary
+*.jpg binary

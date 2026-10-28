@@ -1,0 +1,18 @@
+{
+ "model": "base",
+ "base": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+ "revision": "2e1fd397ee46e1388853d2af2c993145b0f1098a",
+ "adapter_sha256": null,
+ "questions": 272,
+ "batch": 16,
+ "max_new_tokens": 160,
+ "decoding": "greedy",
+ "seconds": 81.0,
+ "gpu": "NVIDIA GeForce RTX 4060",
+ "versions": {
+  "python": "3.12.13",
+  "torch": "2.14.1+cu130",
+  "transformers": "5.20.2",
+  "peft": "0.21.2"
+ }
+}

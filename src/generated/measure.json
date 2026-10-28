@@ -1,0 +1,5420 @@
+{
+ "test": {
+  "questions": 272,
+  "split": {
+   "seen": 110,
+   "reworded": 90,
+   "unseen": 72
+  }
+ },
+ "trainExamples": 384,
+ "summary": {
+  "base": {
+   "all": {
+    "right": 152,
+    "of": 272,
+    "rate": 0.559,
+    "wilson": [
+     0.499,
+     0.617
+    ],
+    "errors": 34
+   },
+   "split": {
+    "seen": {
+     "right": 63,
+     "of": 110,
+     "rate": 0.573,
+     "wilson": [
+      0.479,
+      0.661
+     ],
+     "errors": 18
+    },
+    "reworded": {
+     "right": 49,
+     "of": 90,
+     "rate": 0.544,
+     "wilson": [
+      0.442,
+      0.643
+     ],
+     "errors": 8
+    },
+    "unseen": {
+     "right": 40,
+     "of": 72,
+     "rate": 0.556,
+     "wilson": [
+      0.441,
+      0.665
+     ],
+     "errors": 8
+    }
+   }
+  },
+  "tuned": {
+   "all": {
+    "right": 223,
+    "of": 272,
+    "rate": 0.82,
+    "wilson": [
+     0.77,
+     0.861
+    ],
+    "errors": 5
+   },
+   "split": {
+    "seen": {
+     "right": 110,
+     "of": 110,
+     "rate": 1,
+     "wilson": [
+      0.966,
+      1
+     ],
+     "errors": 0
+    },
+    "reworded": {
+     "right": 89,
+     "of": 90,
+     "rate": 0.989,
+     "wilson": [
+      0.94,
+      0.998
+     ],
+     "errors": 0
+    },
+    "unseen": {
+     "right": 24,
+     "of": 72,
+     "rate": 0.333,
+     "wilson": [
+      0.235,
+      0.448
+     ],
+     "errors": 5
+    }
+   }
+  }
+ },
+ "families": [
+  {
+   "family": "orders_by_status",
+   "trained": true,
+   "of": 10,
+   "base": 10,
+   "tuned": 10
+  },
+  {
+   "family": "customers_in_country",
+   "trained": true,
+   "of": 11,
+   "base": 10,
+   "tuned": 11
+  },
+  {
+   "family": "revenue_by_status",
+   "trained": true,
+   "of": 10,
+   "base": 8,
+   "tuned": 10
+  },
+  {
+   "family": "avg_order_country",
+   "trained": true,
+   "of": 11,
+   "base": 9,
+   "tuned": 11
+  },
+  {
+   "family": "top_products_revenue",
+   "trained": true,
+   "of": 7,
+   "base": 5,
+   "tuned": 7
+  },
+  {
+   "family": "products_in_category",
+   "trained": true,
+   "of": 11,
+   "base": 2,
+   "tuned": 11
+  },
+  {
+   "family": "low_stock",
+   "trained": true,
+   "of": 10,
+   "base": 7,
+   "tuned": 10
+  },
+  {
+   "family": "orders_in_month",
+   "trained": true,
+   "of": 11,
+   "base": 3,
+   "tuned": 11
+  },
+  {
+   "family": "shipments_by_carrier",
+   "trained": true,
+   "of": 10,
+   "base": 0,
+   "tuned": 10
+  },
+  {
+   "family": "delivered_by_carrier",
+   "trained": true,
+   "of": 10,
+   "base": 0,
+   "tuned": 10
+  },
+  {
+   "family": "customers_without_orders",
+   "trained": true,
+   "of": 1,
+   "base": 1,
+   "tuned": 1
+  },
+  {
+   "family": "largest_order",
+   "trained": true,
+   "of": 1,
+   "base": 1,
+   "tuned": 1
+  },
+  {
+   "family": "orders_of_customer",
+   "trained": true,
+   "of": 11,
+   "base": 6,
+   "tuned": 11
+  },
+  {
+   "family": "revenue_per_country",
+   "trained": true,
+   "of": 1,
+   "base": 1,
+   "tuned": 1
+  },
+  {
+   "family": "category_revenue",
+   "trained": true,
+   "of": 11,
+   "base": 0,
+   "tuned": 11
+  },
+  {
+   "family": "orders_above",
+   "trained": true,
+   "of": 10,
+   "base": 10,
+   "tuned": 10
+  },
+  {
+   "family": "avg_price_category",
+   "trained": true,
+   "of": 11,
+   "base": 11,
+   "tuned": 11
+  },
+  {
+   "family": "units_in_order",
+   "trained": true,
+   "of": 11,
+   "base": 11,
+   "tuned": 11
+  },
+  {
+   "family": "top_customers",
+   "trained": true,
+   "of": 7,
+   "base": 7,
+   "tuned": 7
+  },
+  {
+   "family": "paid_not_shipped",
+   "trained": true,
+   "of": 1,
+   "base": 0,
+   "tuned": 1
+  },
+  {
+   "family": "signups_in_month",
+   "trained": true,
+   "of": 11,
+   "base": 8,
+   "tuned": 11
+  },
+  {
+   "family": "priciest_in_category",
+   "trained": true,
+   "of": 11,
+   "base": 1,
+   "tuned": 11
+  },
+  {
+   "family": "orders_per_status",
+   "trained": true,
+   "of": 1,
+   "base": 1,
+   "tuned": 0
+  },
+  {
+   "family": "shipments_to_country",
+   "trained": true,
+   "of": 11,
+   "base": 0,
+   "tuned": 11
+  },
+  {
+   "family": "avg_units_per_order",
+   "trained": false,
+   "of": 3,
+   "base": 0,
+   "tuned": 0
+  },
+  {
+   "family": "least_sold",
+   "trained": false,
+   "of": 3,
+   "base": 2,
+   "tuned": 2
+  },
+  {
+   "family": "country_most_orders",
+   "trained": false,
+   "of": 3,
+   "base": 3,
+   "tuned": 2
+  },
+  {
+   "family": "cancelled_value_month",
+   "trained": false,
+   "of": 15,
+   "base": 15,
+   "tuned": 0
+  },
+  {
+   "family": "carrier_most_delivered",
+   "trained": false,
+   "of": 3,
+   "base": 0,
+   "tuned": 1
+  },
+  {
+   "family": "country_of_order",
+   "trained": false,
+   "of": 15,
+   "base": 10,
+   "tuned": 10
+  },
+  {
+   "family": "units_in_category",
+   "trained": false,
+   "of": 15,
+   "base": 10,
+   "tuned": 9
+  },
+  {
+   "family": "orders_per_customer_country",
+   "trained": false,
+   "of": 15,
+   "base": 0,
+   "tuned": 0
+  }
+ ],
+ "questions": [
+  {
+   "id": "q001",
+   "family": "orders_by_status",
+   "split": "seen",
+   "question": "How many orders are shipped?",
+   "gold": "SELECT count(*) FROM orders WHERE status = 'shipped'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE status = 'shipped'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE status = 'shipped'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q002",
+   "family": "orders_by_status",
+   "split": "seen",
+   "question": "How many orders are paid?",
+   "gold": "SELECT count(*) FROM orders WHERE status = 'paid'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE status = 'paid'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE status = 'paid'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q003",
+   "family": "orders_by_status",
+   "split": "seen",
+   "question": "How many orders are cancelled?",
+   "gold": "SELECT count(*) FROM orders WHERE status = 'cancelled'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE status = 'cancelled'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE status = 'cancelled'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q004",
+   "family": "orders_by_status",
+   "split": "seen",
+   "question": "Count the cancelled orders.",
+   "gold": "SELECT count(*) FROM orders WHERE status = 'cancelled'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE status = 'cancelled'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE status = 'cancelled'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q005",
+   "family": "orders_by_status",
+   "split": "seen",
+   "question": "Count the new orders.",
+   "gold": "SELECT count(*) FROM orders WHERE status = 'new'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE status = 'new'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE status = 'new'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q006",
+   "family": "orders_by_status",
+   "split": "seen",
+   "question": "Count the paid orders.",
+   "gold": "SELECT count(*) FROM orders WHERE status = 'paid'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE status = 'paid'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE status = 'paid'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q007",
+   "family": "orders_by_status",
+   "split": "reworded",
+   "question": "What is the number of orders with status shipped?",
+   "gold": "SELECT count(*) FROM orders WHERE status = 'shipped'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE status = 'shipped'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE status = 'shipped'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q008",
+   "family": "orders_by_status",
+   "split": "reworded",
+   "question": "What is the number of orders with status cancelled?",
+   "gold": "SELECT count(*) FROM orders WHERE status = 'cancelled'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE status = 'cancelled'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE status = 'cancelled'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q009",
+   "family": "orders_by_status",
+   "split": "reworded",
+   "question": "What is the number of orders with status new?",
+   "gold": "SELECT count(*) FROM orders WHERE status = 'new'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE status = 'new'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE status = 'new'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q010",
+   "family": "orders_by_status",
+   "split": "reworded",
+   "question": "What is the number of orders with status paid?",
+   "gold": "SELECT count(*) FROM orders WHERE status = 'paid'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE status = 'paid'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE status = 'paid'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q011",
+   "family": "customers_in_country",
+   "split": "seen",
+   "question": "How many customers are from Italy?",
+   "gold": "SELECT count(*) FROM customers WHERE country = 'IT'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM customers WHERE country = 'IT'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM customers WHERE country = 'IT'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q012",
+   "family": "customers_in_country",
+   "split": "seen",
+   "question": "How many customers are from the Netherlands?",
+   "gold": "SELECT count(*) FROM customers WHERE country = 'NL'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM customers WHERE country = 'NL'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM customers WHERE country = 'NL'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q013",
+   "family": "customers_in_country",
+   "split": "seen",
+   "question": "How many customers are from France?",
+   "gold": "SELECT count(*) FROM customers WHERE country = 'FR'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM customers WHERE country = 'FR'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM customers WHERE country = 'FR'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q014",
+   "family": "customers_in_country",
+   "split": "seen",
+   "question": "Count our customers in France.",
+   "gold": "SELECT count(*) FROM customers WHERE country = 'FR'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM customers WHERE country = 'FR'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM customers WHERE country = 'FR'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q015",
+   "family": "customers_in_country",
+   "split": "seen",
+   "question": "Count our customers in Greece.",
+   "gold": "SELECT count(*) FROM customers WHERE country = 'GR'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM customers WHERE country = 'GR'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM customers WHERE country = 'GR'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q016",
+   "family": "customers_in_country",
+   "split": "seen",
+   "question": "Count our customers in Italy.",
+   "gold": "SELECT count(*) FROM customers WHERE country = 'IT'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM customers WHERE country = 'IT'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM customers WHERE country = 'IT'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q017",
+   "family": "customers_in_country",
+   "split": "reworded",
+   "question": "What is the number of customers based in Spain?",
+   "gold": "SELECT count(*) FROM customers WHERE country = 'ES'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM customers WHERE country = 'Spain'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM customers WHERE country = 'ES'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q018",
+   "family": "customers_in_country",
+   "split": "reworded",
+   "question": "What is the number of customers based in France?",
+   "gold": "SELECT count(*) FROM customers WHERE country = 'FR'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM customers WHERE country = 'FR'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM customers WHERE country = 'FR'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q019",
+   "family": "customers_in_country",
+   "split": "reworded",
+   "question": "What is the number of customers based in Greece?",
+   "gold": "SELECT count(*) FROM customers WHERE country = 'GR'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM customers WHERE country = 'GR'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM customers WHERE country = 'GR'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q020",
+   "family": "customers_in_country",
+   "split": "reworded",
+   "question": "What is the number of customers based in Italy?",
+   "gold": "SELECT count(*) FROM customers WHERE country = 'IT'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM customers WHERE country = 'IT'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM customers WHERE country = 'IT'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q021",
+   "family": "customers_in_country",
+   "split": "reworded",
+   "question": "What is the number of customers based in Germany?",
+   "gold": "SELECT count(*) FROM customers WHERE country = 'DE'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM customers WHERE country = 'DE'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM customers WHERE country = 'DE'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q022",
+   "family": "revenue_by_status",
+   "split": "seen",
+   "question": "What is the total value of the shipped orders?",
+   "gold": "SELECT sum(total) FROM orders WHERE status = 'shipped'",
+   "base": {
+    "sql": "SELECT SUM(o.total) FROM orders o JOIN shipments s ON o.id = s.order_id WHERE s.status = 'delivered'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(total) FROM orders WHERE status = 'shipped'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q023",
+   "family": "revenue_by_status",
+   "split": "seen",
+   "question": "What is the total value of the paid orders?",
+   "gold": "SELECT sum(total) FROM orders WHERE status = 'paid'",
+   "base": {
+    "sql": "SELECT SUM(o.total) FROM orders o WHERE o.status = 'paid'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(total) FROM orders WHERE status = 'paid'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q024",
+   "family": "revenue_by_status",
+   "split": "seen",
+   "question": "What is the total value of the cancelled orders?",
+   "gold": "SELECT sum(total) FROM orders WHERE status = 'cancelled'",
+   "base": {
+    "sql": "SELECT SUM(o.total) FROM orders o WHERE o.status = 'cancelled'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(total) FROM orders WHERE status = 'cancelled'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q025",
+   "family": "revenue_by_status",
+   "split": "seen",
+   "question": "Sum the totals of all shipped orders.",
+   "gold": "SELECT sum(total) FROM orders WHERE status = 'shipped'",
+   "base": {
+    "sql": "SELECT SUM(o.total) FROM orders o WHERE o.status = 'shipped'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(total) FROM orders WHERE status = 'shipped'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q026",
+   "family": "revenue_by_status",
+   "split": "seen",
+   "question": "Sum the totals of all paid orders.",
+   "gold": "SELECT sum(total) FROM orders WHERE status = 'paid'",
+   "base": {
+    "sql": "SELECT SUM(o.total) FROM orders o WHERE o.status = 'paid'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(total) FROM orders WHERE status = 'paid'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q027",
+   "family": "revenue_by_status",
+   "split": "seen",
+   "question": "Sum the totals of all new orders.",
+   "gold": "SELECT sum(total) FROM orders WHERE status = 'new'",
+   "base": {
+    "sql": "SELECT SUM(o.total) FROM orders o WHERE o.status = 'new'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(total) FROM orders WHERE status = 'new'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q028",
+   "family": "revenue_by_status",
+   "split": "reworded",
+   "question": "How much money do the new orders add up to?",
+   "gold": "SELECT sum(total) FROM orders WHERE status = 'new'",
+   "base": {
+    "sql": "SELECT SUM(total) FROM orders WHERE status = 'new'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(total) FROM orders WHERE status = 'new'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q029",
+   "family": "revenue_by_status",
+   "split": "reworded",
+   "question": "How much money do the cancelled orders add up to?",
+   "gold": "SELECT sum(total) FROM orders WHERE status = 'cancelled'",
+   "base": {
+    "sql": "SELECT SUM(total) FROM orders WHERE status = 'cancelled'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(total) FROM orders WHERE status = 'cancelled'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q030",
+   "family": "revenue_by_status",
+   "split": "reworded",
+   "question": "How much money do the paid orders add up to?",
+   "gold": "SELECT sum(total) FROM orders WHERE status = 'paid'",
+   "base": {
+    "sql": "SELECT SUM(o.total) FROM orders o WHERE o.status = 'paid'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(total) FROM orders WHERE status = 'paid'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q031",
+   "family": "revenue_by_status",
+   "split": "reworded",
+   "question": "How much money do the shipped orders add up to?",
+   "gold": "SELECT sum(total) FROM orders WHERE status = 'shipped'",
+   "base": {
+    "sql": "SELECT SUM(o.total) FROM orders o JOIN shipments s ON o.id = s.order_id WHERE s.status = 'delivered'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(total) FROM orders WHERE status = 'shipped'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q032",
+   "family": "avg_order_country",
+   "split": "seen",
+   "question": "What is the average order total for customers in Germany?",
+   "gold": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'DE'",
+   "base": {
+    "sql": "SELECT AVG(total) FROM orders WHERE customer_id IN (SELECT id FROM customers WHERE country = 'DE')",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'DE'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q033",
+   "family": "avg_order_country",
+   "split": "seen",
+   "question": "What is the average order total for customers in Greece?",
+   "gold": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'GR'",
+   "base": {
+    "sql": "SELECT AVG(total) FROM orders WHERE customer_id IN (SELECT id FROM customers WHERE country = 'GR')",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'GR'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q034",
+   "family": "avg_order_country",
+   "split": "seen",
+   "question": "What is the average order total for customers in France?",
+   "gold": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'FR'",
+   "base": {
+    "sql": "SELECT AVG(total) FROM orders WHERE customer_id IN (SELECT id FROM customers WHERE country = 'FR')",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'FR'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q035",
+   "family": "avg_order_country",
+   "split": "seen",
+   "question": "Average order value from Italy.",
+   "gold": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'IT'",
+   "base": {
+    "sql": "SELECT AVG(total) FROM orders WHERE country = 'IT'",
+    "right": false,
+    "error": "no such column: country"
+   },
+   "tuned": {
+    "sql": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'IT'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q036",
+   "family": "avg_order_country",
+   "split": "seen",
+   "question": "Average order value from France.",
+   "gold": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'FR'",
+   "base": {
+    "sql": "SELECT AVG(total) FROM orders WHERE country = 'FR'",
+    "right": false,
+    "error": "no such column: country"
+   },
+   "tuned": {
+    "sql": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'FR'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q037",
+   "family": "avg_order_country",
+   "split": "seen",
+   "question": "Average order value from Greece.",
+   "gold": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'GR'",
+   "base": {
+    "sql": "SELECT AVG(total) FROM orders WHERE customer_id IN (SELECT id FROM customers WHERE country = 'GR')",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'GR'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q038",
+   "family": "avg_order_country",
+   "split": "reworded",
+   "question": "On average, how much is an order placed by a customer from Greece?",
+   "gold": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'GR'",
+   "base": {
+    "sql": "SELECT AVG(o.total) FROM customers c JOIN orders o ON c.id = o.customer_id WHERE c.country = 'GR'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'GR'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q039",
+   "family": "avg_order_country",
+   "split": "reworded",
+   "question": "On average, how much is an order placed by a customer from France?",
+   "gold": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'FR'",
+   "base": {
+    "sql": "SELECT AVG(o.total) FROM customers c JOIN orders o ON c.id = o.customer_id WHERE c.country = 'FR'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'FR'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q040",
+   "family": "avg_order_country",
+   "split": "reworded",
+   "question": "On average, how much is an order placed by a customer from Italy?",
+   "gold": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'IT'",
+   "base": {
+    "sql": "SELECT AVG(o.total) FROM customers c JOIN orders o ON c.id = o.customer_id WHERE c.country = 'IT'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'IT'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q041",
+   "family": "avg_order_country",
+   "split": "reworded",
+   "question": "On average, how much is an order placed by a customer from the Netherlands?",
+   "gold": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'NL'",
+   "base": {
+    "sql": "SELECT AVG(total) FROM orders WHERE customer_id IN (SELECT id FROM customers WHERE country = 'NL')",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'NL'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q042",
+   "family": "avg_order_country",
+   "split": "reworded",
+   "question": "On average, how much is an order placed by a customer from Germany?",
+   "gold": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'DE'",
+   "base": {
+    "sql": "SELECT AVG(o.total) FROM customers c JOIN orders o ON c.id = o.customer_id WHERE c.country = 'DE'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'DE'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q043",
+   "family": "top_products_revenue",
+   "split": "seen",
+   "question": "Which 3 products brought in the most revenue?",
+   "gold": "SELECT p.name FROM order_items oi JOIN products p ON p.id = oi.product_id GROUP BY p.id ORDER BY sum(oi.qty * oi.price) DESC, p.id LIMIT 3",
+   "base": {
+    "sql": "SELECT p.name FROM products p JOIN order_items oi ON p.id = oi.product_id GROUP BY p.name ORDER BY SUM(oi.price * oi.qty) DESC LIMIT 3",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT p.name FROM order_items oi JOIN products p ON p.id = oi.product_id GROUP BY p.id ORDER BY sum(oi.qty * oi.price) DESC, p.id LIMIT 3",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q044",
+   "family": "top_products_revenue",
+   "split": "seen",
+   "question": "Which 5 products brought in the most revenue?",
+   "gold": "SELECT p.name FROM order_items oi JOIN products p ON p.id = oi.product_id GROUP BY p.id ORDER BY sum(oi.qty * oi.price) DESC, p.id LIMIT 5",
+   "base": {
+    "sql": "SELECT p.name FROM products p JOIN order_items oi ON p.id = oi.product_id GROUP BY p.name ORDER BY SUM(oi.price * oi.qty) DESC LIMIT 5",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT p.name FROM order_items oi JOIN products p ON p.id = oi.product_id GROUP BY p.id ORDER BY sum(oi.qty * oi.price) DESC, p.id LIMIT 5",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q045",
+   "family": "top_products_revenue",
+   "split": "seen",
+   "question": "Top 5 products by sales revenue.",
+   "gold": "SELECT p.name FROM order_items oi JOIN products p ON p.id = oi.product_id GROUP BY p.id ORDER BY sum(oi.qty * oi.price) DESC, p.id LIMIT 5",
+   "base": {
+    "sql": "SELECT p.name, SUM(o.total) as total_sales \nFROM products p \nJOIN order_items oi ON p.id = oi.product_id \nJOIN orders o ON oi.order_id = o.id \nWHERE o.created_at BETWEEN '2026-01-01' AND '2026-12-31' \nGROUP BY p.name \nORDER BY total_sales DESC \nLIMIT 5",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT p.name FROM order_items oi JOIN products p ON p.id = oi.product_id GROUP BY p.id ORDER BY sum(oi.qty * oi.price) DESC, p.id LIMIT 5",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q046",
+   "family": "top_products_revenue",
+   "split": "seen",
+   "question": "Top 10 products by sales revenue.",
+   "gold": "SELECT p.name FROM order_items oi JOIN products p ON p.id = oi.product_id GROUP BY p.id ORDER BY sum(oi.qty * oi.price) DESC, p.id LIMIT 10",
+   "base": {
+    "sql": "SELECT p.name, SUM(o.total) as total_sales \nFROM products p \nJOIN order_items oi ON p.id = oi.product_id \nJOIN orders o ON oi.order_id = o.id \nWHERE o.created_at BETWEEN '2026-01-01' AND '2026-12-31' \nGROUP BY p.name \nORDER BY total_sales DESC \nLIMIT 10",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT p.name FROM order_items oi JOIN products p ON p.id = oi.product_id GROUP BY p.id ORDER BY sum(oi.qty * oi.price) DESC, p.id LIMIT 10",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q047",
+   "family": "top_products_revenue",
+   "split": "reworded",
+   "question": "Name the 5 best selling products by money earned.",
+   "gold": "SELECT p.name FROM order_items oi JOIN products p ON p.id = oi.product_id GROUP BY p.id ORDER BY sum(oi.qty * oi.price) DESC, p.id LIMIT 5",
+   "base": {
+    "sql": "SELECT p.name FROM products p JOIN order_items oi ON p.id = oi.product_id GROUP BY p.id ORDER BY SUM(oi.qty * oi.price) DESC LIMIT 5",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT p.name FROM order_items oi JOIN products p ON p.id = oi.product_id GROUP BY p.id ORDER BY sum(oi.qty * oi.price) DESC, p.id LIMIT 5",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q048",
+   "family": "top_products_revenue",
+   "split": "reworded",
+   "question": "Name the 10 best selling products by money earned.",
+   "gold": "SELECT p.name FROM order_items oi JOIN products p ON p.id = oi.product_id GROUP BY p.id ORDER BY sum(oi.qty * oi.price) DESC, p.id LIMIT 10",
+   "base": {
+    "sql": "SELECT p.name FROM products p JOIN order_items oi ON p.id = oi.product_id GROUP BY p.id ORDER BY SUM(oi.qty * oi.price) DESC LIMIT 10",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT p.name FROM order_items oi JOIN products p ON p.id = oi.product_id GROUP BY p.id ORDER BY sum(oi.qty * oi.price) DESC, p.id LIMIT 10",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q049",
+   "family": "top_products_revenue",
+   "split": "reworded",
+   "question": "Name the 3 best selling products by money earned.",
+   "gold": "SELECT p.name FROM order_items oi JOIN products p ON p.id = oi.product_id GROUP BY p.id ORDER BY sum(oi.qty * oi.price) DESC, p.id LIMIT 3",
+   "base": {
+    "sql": "SELECT p.name FROM products p JOIN order_items oi ON p.id = oi.product_id GROUP BY p.id ORDER BY SUM(oi.qty * oi.price) DESC LIMIT 3",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT p.name FROM order_items oi JOIN products p ON p.id = oi.product_id GROUP BY p.id ORDER BY sum(oi.qty * oi.price) DESC, p.id LIMIT 3",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q050",
+   "family": "products_in_category",
+   "split": "seen",
+   "question": "List the products in the office category.",
+   "gold": "SELECT name FROM products WHERE category = 'office'",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p WHERE p.category = 'office'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE category = 'office'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q051",
+   "family": "products_in_category",
+   "split": "seen",
+   "question": "List the products in the sport category.",
+   "gold": "SELECT name FROM products WHERE category = 'sport'",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p JOIN categories AS c ON p.category = c.id WHERE c.name = 'sport'",
+    "right": false,
+    "error": "no such table: categories"
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE category = 'sport'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q052",
+   "family": "products_in_category",
+   "split": "seen",
+   "question": "List the products in the toys category.",
+   "gold": "SELECT name FROM products WHERE category = 'toys'",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p WHERE p.category = 'toys'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE category = 'toys'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q053",
+   "family": "products_in_category",
+   "split": "seen",
+   "question": "Which products do we sell under garden?",
+   "gold": "SELECT name FROM products WHERE category = 'garden'",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p JOIN order_items AS oi ON p.id = oi.product_id WHERE oi.qty > 0 AND p.category = 'garden'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE category = 'garden'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q054",
+   "family": "products_in_category",
+   "split": "seen",
+   "question": "Which products do we sell under books?",
+   "gold": "SELECT name FROM products WHERE category = 'books'",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p JOIN order_items AS oi ON p.id = oi.product_id WHERE p.category = 'books'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE category = 'books'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q055",
+   "family": "products_in_category",
+   "split": "seen",
+   "question": "Which products do we sell under toys?",
+   "gold": "SELECT name FROM products WHERE category = 'toys'",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p JOIN order_items AS oi ON p.id = oi.product_id WHERE oi.qty > 0 AND p.category = 'toys'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE category = 'toys'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q056",
+   "family": "products_in_category",
+   "split": "reworded",
+   "question": "Show every product filed under toys.",
+   "gold": "SELECT name FROM products WHERE category = 'toys'",
+   "base": {
+    "sql": "SELECT * FROM products WHERE category = 'toys'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE category = 'toys'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q057",
+   "family": "products_in_category",
+   "split": "reworded",
+   "question": "Show every product filed under books.",
+   "gold": "SELECT name FROM products WHERE category = 'books'",
+   "base": {
+    "sql": "SELECT * FROM products WHERE category = 'books'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE category = 'books'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q058",
+   "family": "products_in_category",
+   "split": "reworded",
+   "question": "Show every product filed under kitchen.",
+   "gold": "SELECT name FROM products WHERE category = 'kitchen'",
+   "base": {
+    "sql": "SELECT * FROM products WHERE category = 'kitchen'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE category = 'kitchen'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q059",
+   "family": "products_in_category",
+   "split": "reworded",
+   "question": "Show every product filed under garden.",
+   "gold": "SELECT name FROM products WHERE category = 'garden'",
+   "base": {
+    "sql": "SELECT * FROM products WHERE category = 'garden'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE category = 'garden'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q060",
+   "family": "products_in_category",
+   "split": "reworded",
+   "question": "Show every product filed under sport.",
+   "gold": "SELECT name FROM products WHERE category = 'sport'",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p JOIN categories AS c ON p.category = c.id WHERE c.name = 'sport'",
+    "right": false,
+    "error": "no such table: categories"
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE category = 'sport'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q061",
+   "family": "low_stock",
+   "split": "seen",
+   "question": "Which products have fewer than 20 units in stock?",
+   "gold": "SELECT name FROM products WHERE stock < 20",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p WHERE p.stock < 20",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE stock < 20",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q062",
+   "family": "low_stock",
+   "split": "seen",
+   "question": "Which products have fewer than 10 units in stock?",
+   "gold": "SELECT name FROM products WHERE stock < 10",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p WHERE p.stock < 10",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE stock < 10",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q063",
+   "family": "low_stock",
+   "split": "seen",
+   "question": "Which products have fewer than 100 units in stock?",
+   "gold": "SELECT name FROM products WHERE stock < 100",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p WHERE p.stock < 100",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE stock < 100",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q064",
+   "family": "low_stock",
+   "split": "seen",
+   "question": "List products with stock below 100.",
+   "gold": "SELECT name FROM products WHERE stock < 100",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p WHERE p.stock < 100",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE stock < 100",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q065",
+   "family": "low_stock",
+   "split": "seen",
+   "question": "List products with stock below 20.",
+   "gold": "SELECT name FROM products WHERE stock < 20",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p WHERE p.stock < 20",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE stock < 20",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q066",
+   "family": "low_stock",
+   "split": "seen",
+   "question": "List products with stock below 10.",
+   "gold": "SELECT name FROM products WHERE stock < 10",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p WHERE p.stock < 10",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE stock < 10",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q067",
+   "family": "low_stock",
+   "split": "reworded",
+   "question": "What is running low, under 10 units left?",
+   "gold": "SELECT name FROM products WHERE stock < 10",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p WHERE p.stock < 10",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE stock < 10",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q068",
+   "family": "low_stock",
+   "split": "reworded",
+   "question": "What is running low, under 20 units left?",
+   "gold": "SELECT name FROM products WHERE stock < 20",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p JOIN order_items AS oi ON p.id = oi.product_id WHERE oi.qty < 20",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE stock < 20",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q069",
+   "family": "low_stock",
+   "split": "reworded",
+   "question": "What is running low, under 100 units left?",
+   "gold": "SELECT name FROM products WHERE stock < 100",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p JOIN order_items AS oi ON p.id = oi.product_id WHERE p.stock < 100",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE stock < 100",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q070",
+   "family": "low_stock",
+   "split": "reworded",
+   "question": "What is running low, under 50 units left?",
+   "gold": "SELECT name FROM products WHERE stock < 50",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p JOIN order_items AS oi ON p.id = oi.product_id WHERE oi.qty < 50",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE stock < 50",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q071",
+   "family": "orders_in_month",
+   "split": "seen",
+   "question": "How many orders were placed in February?",
+   "gold": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '02'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE MONTH(created_at) = 2",
+    "right": false,
+    "error": "no such function: MONTH"
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '02'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q072",
+   "family": "orders_in_month",
+   "split": "seen",
+   "question": "How many orders were placed in May?",
+   "gold": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '05'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE MONTH(created_at) = 5",
+    "right": false,
+    "error": "no such function: MONTH"
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '05'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q073",
+   "family": "orders_in_month",
+   "split": "seen",
+   "question": "How many orders were placed in January?",
+   "gold": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '01'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE MONTH(created_at) = 1",
+    "right": false,
+    "error": "no such function: MONTH"
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '01'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q074",
+   "family": "orders_in_month",
+   "split": "seen",
+   "question": "Count the orders created in May.",
+   "gold": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '05'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE MONTH(created_at) = 5",
+    "right": false,
+    "error": "no such function: MONTH"
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '05'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q075",
+   "family": "orders_in_month",
+   "split": "seen",
+   "question": "Count the orders created in March.",
+   "gold": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '03'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE MONTH(created_at) = 3",
+    "right": false,
+    "error": "no such function: MONTH"
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '03'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q076",
+   "family": "orders_in_month",
+   "split": "seen",
+   "question": "Count the orders created in February.",
+   "gold": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '02'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE MONTH(created_at) = 2",
+    "right": false,
+    "error": "no such function: MONTH"
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '02'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q077",
+   "family": "orders_in_month",
+   "split": "reworded",
+   "question": "What was the order count for January?",
+   "gold": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '01'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE strftime('%Y-%m', created_at) = '2026-01'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '01'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q078",
+   "family": "orders_in_month",
+   "split": "reworded",
+   "question": "What was the order count for March?",
+   "gold": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '03'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE MONTH(created_at) = 3",
+    "right": false,
+    "error": "no such function: MONTH"
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '03'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q079",
+   "family": "orders_in_month",
+   "split": "reworded",
+   "question": "What was the order count for September?",
+   "gold": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '09'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE strftime('%m', created_at) = '09'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '09'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q080",
+   "family": "orders_in_month",
+   "split": "reworded",
+   "question": "What was the order count for May?",
+   "gold": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '05'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE MONTH(created_at) = 5",
+    "right": false,
+    "error": "no such function: MONTH"
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '05'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q081",
+   "family": "orders_in_month",
+   "split": "reworded",
+   "question": "What was the order count for April?",
+   "gold": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '04'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE strftime('%m', created_at) = '04'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '04'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q082",
+   "family": "shipments_by_carrier",
+   "split": "seen",
+   "question": "How many shipments went with UPS?",
+   "gold": "SELECT count(*) FROM shipments WHERE carrier = 'ups'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE carrier = 'UPS'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments WHERE carrier = 'ups'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q083",
+   "family": "shipments_by_carrier",
+   "split": "seen",
+   "question": "How many shipments went with ACS?",
+   "gold": "SELECT count(*) FROM shipments WHERE carrier = 'acs'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE carrier = 'ACS'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments WHERE carrier = 'acs'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q084",
+   "family": "shipments_by_carrier",
+   "split": "seen",
+   "question": "How many shipments went with DHL?",
+   "gold": "SELECT count(*) FROM shipments WHERE carrier = 'dhl'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE carrier = 'DHL'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments WHERE carrier = 'dhl'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q085",
+   "family": "shipments_by_carrier",
+   "split": "seen",
+   "question": "Count the shipments handled by ACS.",
+   "gold": "SELECT count(*) FROM shipments WHERE carrier = 'acs'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE carrier = 'ACS'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments WHERE carrier = 'acs'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q086",
+   "family": "shipments_by_carrier",
+   "split": "seen",
+   "question": "Count the shipments handled by UPS.",
+   "gold": "SELECT count(*) FROM shipments WHERE carrier = 'ups'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE carrier = 'UPS' AND status = 'delivered'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments WHERE carrier = 'ups'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q087",
+   "family": "shipments_by_carrier",
+   "split": "seen",
+   "question": "Count the shipments handled by ELTA.",
+   "gold": "SELECT count(*) FROM shipments WHERE carrier = 'elta'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE carrier = 'ELTA' AND status = 'delivered'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments WHERE carrier = 'elta'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q088",
+   "family": "shipments_by_carrier",
+   "split": "reworded",
+   "question": "How many parcels did UPS carry for us?",
+   "gold": "SELECT count(*) FROM shipments WHERE carrier = 'ups'",
+   "base": {
+    "sql": "SELECT COUNT(order_id) FROM shipments WHERE carrier = 'UPS' AND status = 'delivered'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments WHERE carrier = 'ups'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q089",
+   "family": "shipments_by_carrier",
+   "split": "reworded",
+   "question": "How many parcels did ACS carry for us?",
+   "gold": "SELECT count(*) FROM shipments WHERE carrier = 'acs'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE carrier = 'ACS' AND status = 'delivered'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments WHERE carrier = 'acs'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q090",
+   "family": "shipments_by_carrier",
+   "split": "reworded",
+   "question": "How many parcels did DHL carry for us?",
+   "gold": "SELECT count(*) FROM shipments WHERE carrier = 'dhl'",
+   "base": {
+    "sql": "SELECT COUNT(order_id) FROM shipments WHERE carrier = 'DHL' AND status = 'delivered'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments WHERE carrier = 'dhl'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q091",
+   "family": "shipments_by_carrier",
+   "split": "reworded",
+   "question": "How many parcels did ELTA carry for us?",
+   "gold": "SELECT count(*) FROM shipments WHERE carrier = 'elta'",
+   "base": {
+    "sql": "SELECT COUNT(order_id) FROM shipments WHERE carrier = 'elta' AND status = 'delivered'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments WHERE carrier = 'elta'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q092",
+   "family": "delivered_by_carrier",
+   "split": "seen",
+   "question": "How many ELTA shipments have been delivered?",
+   "gold": "SELECT count(*) FROM shipments WHERE carrier = 'elta' AND status = 'delivered'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE carrier = 'ELTA' AND status = 'delivered'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments WHERE carrier = 'elta' AND status = 'delivered'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q093",
+   "family": "delivered_by_carrier",
+   "split": "seen",
+   "question": "How many UPS shipments have been delivered?",
+   "gold": "SELECT count(*) FROM shipments WHERE carrier = 'ups' AND status = 'delivered'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE carrier = 'UPS' AND status = 'delivered'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments WHERE carrier = 'ups' AND status = 'delivered'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q094",
+   "family": "delivered_by_carrier",
+   "split": "seen",
+   "question": "How many ACS shipments have been delivered?",
+   "gold": "SELECT count(*) FROM shipments WHERE carrier = 'acs' AND status = 'delivered'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE carrier = 'ACS' AND status = 'delivered'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments WHERE carrier = 'acs' AND status = 'delivered'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q095",
+   "family": "delivered_by_carrier",
+   "split": "seen",
+   "question": "Count delivered shipments sent with ELTA.",
+   "gold": "SELECT count(*) FROM shipments WHERE carrier = 'elta' AND status = 'delivered'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE carrier = 'ELTA' AND status = 'delivered'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments WHERE carrier = 'elta' AND status = 'delivered'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q096",
+   "family": "delivered_by_carrier",
+   "split": "seen",
+   "question": "Count delivered shipments sent with ACS.",
+   "gold": "SELECT count(*) FROM shipments WHERE carrier = 'acs' AND status = 'delivered'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE carrier = 'ACS' AND status = 'delivered'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments WHERE carrier = 'acs' AND status = 'delivered'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q097",
+   "family": "delivered_by_carrier",
+   "split": "seen",
+   "question": "Count delivered shipments sent with UPS.",
+   "gold": "SELECT count(*) FROM shipments WHERE carrier = 'ups' AND status = 'delivered'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE carrier = 'UPS' AND status = 'delivered'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments WHERE carrier = 'ups' AND status = 'delivered'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q098",
+   "family": "delivered_by_carrier",
+   "split": "reworded",
+   "question": "Of the parcels DHL carried, how many arrived?",
+   "gold": "SELECT count(*) FROM shipments WHERE carrier = 'dhl' AND status = 'delivered'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE carrier = 'DHL' AND status = 'delivered'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments WHERE carrier = 'dhl' AND status = 'delivered'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q099",
+   "family": "delivered_by_carrier",
+   "split": "reworded",
+   "question": "Of the parcels UPS carried, how many arrived?",
+   "gold": "SELECT count(*) FROM shipments WHERE carrier = 'ups' AND status = 'delivered'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE carrier = 'UPS' AND status = 'delivered'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments WHERE carrier = 'ups' AND status = 'delivered'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q100",
+   "family": "delivered_by_carrier",
+   "split": "reworded",
+   "question": "Of the parcels ELTA carried, how many arrived?",
+   "gold": "SELECT count(*) FROM shipments WHERE carrier = 'elta' AND status = 'delivered'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE carrier = 'ELTA' AND status = 'delivered'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments WHERE carrier = 'elta' AND status = 'delivered'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q101",
+   "family": "delivered_by_carrier",
+   "split": "reworded",
+   "question": "Of the parcels ACS carried, how many arrived?",
+   "gold": "SELECT count(*) FROM shipments WHERE carrier = 'acs' AND status = 'delivered'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE carrier = 'ACS' AND status = 'delivered'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments WHERE carrier = 'acs' AND status = 'delivered'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q102",
+   "family": "customers_without_orders",
+   "split": "reworded",
+   "question": "Who signed up but never bought anything?",
+   "gold": "SELECT name FROM customers WHERE id NOT IN (SELECT customer_id FROM orders)",
+   "base": {
+    "sql": "SELECT c.name FROM customers AS c WHERE c.id NOT IN (SELECT o.customer_id FROM orders AS o)",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM customers WHERE id NOT IN (SELECT customer_id FROM orders)",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q103",
+   "family": "largest_order",
+   "split": "reworded",
+   "question": "How much was our most expensive order?",
+   "gold": "SELECT max(total) FROM orders",
+   "base": {
+    "sql": "SELECT MAX(total) FROM orders",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT max(total) FROM orders",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q104",
+   "family": "orders_of_customer",
+   "split": "seen",
+   "question": "How many orders has customer 25 placed?",
+   "gold": "SELECT count(*) FROM orders WHERE customer_id = 25",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE customer_id = 25",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE customer_id = 25",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q105",
+   "family": "orders_of_customer",
+   "split": "seen",
+   "question": "How many orders has customer 3 placed?",
+   "gold": "SELECT count(*) FROM orders WHERE customer_id = 3",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE customer_id = 3",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE customer_id = 3",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q106",
+   "family": "orders_of_customer",
+   "split": "seen",
+   "question": "How many orders has customer 18 placed?",
+   "gold": "SELECT count(*) FROM orders WHERE customer_id = 18",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE customer_id = 18",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE customer_id = 18",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q107",
+   "family": "orders_of_customer",
+   "split": "seen",
+   "question": "Count the orders of customer number 7.",
+   "gold": "SELECT count(*) FROM orders WHERE customer_id = 7",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE customer_id = 7",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE customer_id = 7",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q108",
+   "family": "orders_of_customer",
+   "split": "seen",
+   "question": "Count the orders of customer number 31.",
+   "gold": "SELECT count(*) FROM orders WHERE customer_id = 31",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE customer_id = 31",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE customer_id = 31",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q109",
+   "family": "orders_of_customer",
+   "split": "seen",
+   "question": "Count the orders of customer number 44.",
+   "gold": "SELECT count(*) FROM orders WHERE customer_id = 44",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE customer_id = 44",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE customer_id = 44",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q110",
+   "family": "orders_of_customer",
+   "split": "reworded",
+   "question": "How often has customer 12 ordered from us?",
+   "gold": "SELECT count(*) FROM orders WHERE customer_id = 12",
+   "base": {
+    "sql": "SELECT COUNT(DISTINCT T3.id) FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id INNER JOIN order_items AS T3 ON T2.id = T3.order_id WHERE T1.id = 12 AND T2.created_at LIKE '2026%'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE customer_id = 12",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q111",
+   "family": "orders_of_customer",
+   "split": "reworded",
+   "question": "How often has customer 18 ordered from us?",
+   "gold": "SELECT count(*) FROM orders WHERE customer_id = 18",
+   "base": {
+    "sql": "SELECT COUNT(DISTINCT T3.id) FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id INNER JOIN order_items AS T3 ON T2.id = T3.order_id WHERE T1.id = 18 AND T2.created_at LIKE '2026%'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE customer_id = 18",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q112",
+   "family": "orders_of_customer",
+   "split": "reworded",
+   "question": "How often has customer 7 ordered from us?",
+   "gold": "SELECT count(*) FROM orders WHERE customer_id = 7",
+   "base": {
+    "sql": "SELECT COUNT(DISTINCT T1.id) FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T1.name = 'customer 7' AND T2.created_at BETWEEN '2026-01-01' AND '2026-12-31'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE customer_id = 7",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q113",
+   "family": "orders_of_customer",
+   "split": "reworded",
+   "question": "How often has customer 25 ordered from us?",
+   "gold": "SELECT count(*) FROM orders WHERE customer_id = 25",
+   "base": {
+    "sql": "SELECT COUNT(DISTINCT T1.id) FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T1.id = 25 AND T2.created_at BETWEEN '2026-01-01' AND '2026-12-31'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE customer_id = 25",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q114",
+   "family": "orders_of_customer",
+   "split": "reworded",
+   "question": "How often has customer 52 ordered from us?",
+   "gold": "SELECT count(*) FROM orders WHERE customer_id = 52",
+   "base": {
+    "sql": "SELECT COUNT(DISTINCT T1.id) FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T1.id = 52 AND T2.created_at LIKE '2026%'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE customer_id = 52",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q115",
+   "family": "revenue_per_country",
+   "split": "reworded",
+   "question": "How much did each country spend with us?",
+   "gold": "SELECT c.country, sum(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id GROUP BY c.country",
+   "base": {
+    "sql": "SELECT c.country, SUM(o.total) as total_spent \nFROM customers c \nJOIN orders o ON c.id = o.customer_id \nWHERE c.country IN ('GR', 'DE', 'FR', 'IT', 'ES', 'NL') \nGROUP BY c.country",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT c.country, sum(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id GROUP BY c.country",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q116",
+   "family": "category_revenue",
+   "split": "seen",
+   "question": "How much revenue came from toys products?",
+   "gold": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'toys'",
+   "base": {
+    "sql": "SELECT SUM(p.price * oi.qty) FROM products p JOIN order_items oi ON p.id = oi.product_id WHERE p.category = 'toys'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'toys'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q117",
+   "family": "category_revenue",
+   "split": "seen",
+   "question": "How much revenue came from books products?",
+   "gold": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'books'",
+   "base": {
+    "sql": "SELECT SUM(p.price * oi.qty) FROM products p JOIN order_items oi ON p.id = oi.product_id WHERE p.category = 'books'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'books'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q118",
+   "family": "category_revenue",
+   "split": "seen",
+   "question": "How much revenue came from sport products?",
+   "gold": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'sport'",
+   "base": {
+    "sql": "SELECT SUM(p.price * oi.qty) FROM products p JOIN order_items oi ON p.id = oi.product_id WHERE p.category = 'sport'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'sport'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q119",
+   "family": "category_revenue",
+   "split": "seen",
+   "question": "Total sales of the sport category.",
+   "gold": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'sport'",
+   "base": {
+    "sql": "SELECT SUM(p.price * oi.qty) FROM products p JOIN order_items oi ON p.id = oi.product_id JOIN orders o ON oi.order_id = o.id WHERE o.status = 'shipped' AND p.category = 'sport'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'sport'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q120",
+   "family": "category_revenue",
+   "split": "seen",
+   "question": "Total sales of the toys category.",
+   "gold": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'toys'",
+   "base": {
+    "sql": "SELECT SUM(p.price * oi.qty) FROM products p JOIN order_items oi ON p.id = oi.product_id JOIN orders o ON oi.order_id = o.id WHERE p.category = 'toys'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'toys'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q121",
+   "family": "category_revenue",
+   "split": "seen",
+   "question": "Total sales of the music category.",
+   "gold": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'music'",
+   "base": {
+    "sql": "SELECT SUM(p.price * oi.qty) FROM products p JOIN order_items oi ON p.id = oi.product_id JOIN orders o ON oi.order_id = o.id WHERE p.category = 'music'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'music'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q122",
+   "family": "category_revenue",
+   "split": "reworded",
+   "question": "What did we earn selling toys items?",
+   "gold": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'toys'",
+   "base": {
+    "sql": "SELECT SUM(p.price * oi.qty) FROM products p JOIN order_items oi ON p.id = oi.product_id WHERE p.category = 'toys'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'toys'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q123",
+   "family": "category_revenue",
+   "split": "reworded",
+   "question": "What did we earn selling pets items?",
+   "gold": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'pets'",
+   "base": {
+    "sql": "SELECT SUM(p.price * oi.qty) FROM products p JOIN order_items oi ON p.id = oi.product_id JOIN orders o ON oi.order_id = o.id WHERE p.category = 'pets'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'pets'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q124",
+   "family": "category_revenue",
+   "split": "reworded",
+   "question": "What did we earn selling office items?",
+   "gold": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'office'",
+   "base": {
+    "sql": "SELECT SUM(p.price * oi.qty) FROM products p JOIN order_items oi ON p.id = oi.product_id WHERE p.category = 'office'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'office'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q125",
+   "family": "category_revenue",
+   "split": "reworded",
+   "question": "What did we earn selling books items?",
+   "gold": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'books'",
+   "base": {
+    "sql": "SELECT SUM(p.price * oi.qty) FROM products p JOIN order_items oi ON p.id = oi.product_id WHERE p.category = 'books'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'books'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q126",
+   "family": "category_revenue",
+   "split": "reworded",
+   "question": "What did we earn selling kitchen items?",
+   "gold": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'kitchen'",
+   "base": {
+    "sql": "SELECT SUM(p.price * oi.qty) FROM products p JOIN order_items oi ON p.id = oi.product_id WHERE p.category = 'kitchen'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'kitchen'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q127",
+   "family": "orders_above",
+   "split": "seen",
+   "question": "How many orders are worth more than 500 euros?",
+   "gold": "SELECT count(*) FROM orders WHERE total > 500",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE total > 500",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE total > 500",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q128",
+   "family": "orders_above",
+   "split": "seen",
+   "question": "How many orders are worth more than 100 euros?",
+   "gold": "SELECT count(*) FROM orders WHERE total > 100",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE total > 100",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE total > 100",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q129",
+   "family": "orders_above",
+   "split": "seen",
+   "question": "How many orders are worth more than 800 euros?",
+   "gold": "SELECT count(*) FROM orders WHERE total > 800",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE total > 800",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE total > 800",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q130",
+   "family": "orders_above",
+   "split": "seen",
+   "question": "Count orders with a total above 100.",
+   "gold": "SELECT count(*) FROM orders WHERE total > 100",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE total > 100",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE total > 100",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q131",
+   "family": "orders_above",
+   "split": "seen",
+   "question": "Count orders with a total above 500.",
+   "gold": "SELECT count(*) FROM orders WHERE total > 500",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE total > 500",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE total > 500",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q132",
+   "family": "orders_above",
+   "split": "seen",
+   "question": "Count orders with a total above 250.",
+   "gold": "SELECT count(*) FROM orders WHERE total > 250",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE total > 250",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE total > 250",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q133",
+   "family": "orders_above",
+   "split": "reworded",
+   "question": "How many orders cost over 800?",
+   "gold": "SELECT count(*) FROM orders WHERE total > 800",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE total > 800",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE total > 800",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q134",
+   "family": "orders_above",
+   "split": "reworded",
+   "question": "How many orders cost over 100?",
+   "gold": "SELECT count(*) FROM orders WHERE total > 100",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE total > 100",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE total > 100",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q135",
+   "family": "orders_above",
+   "split": "reworded",
+   "question": "How many orders cost over 250?",
+   "gold": "SELECT count(*) FROM orders WHERE total > 250",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE total > 250",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE total > 250",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q136",
+   "family": "orders_above",
+   "split": "reworded",
+   "question": "How many orders cost over 500?",
+   "gold": "SELECT count(*) FROM orders WHERE total > 500",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM orders WHERE total > 500",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE total > 500",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q137",
+   "family": "avg_price_category",
+   "split": "seen",
+   "question": "What is the average price of books products?",
+   "gold": "SELECT avg(price) FROM products WHERE category = 'books'",
+   "base": {
+    "sql": "SELECT AVG(price) FROM products WHERE category = 'books'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT avg(price) FROM products WHERE category = 'books'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q138",
+   "family": "avg_price_category",
+   "split": "seen",
+   "question": "What is the average price of toys products?",
+   "gold": "SELECT avg(price) FROM products WHERE category = 'toys'",
+   "base": {
+    "sql": "SELECT AVG(price) FROM products WHERE category = 'toys'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT avg(price) FROM products WHERE category = 'toys'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q139",
+   "family": "avg_price_category",
+   "split": "seen",
+   "question": "What is the average price of pets products?",
+   "gold": "SELECT avg(price) FROM products WHERE category = 'pets'",
+   "base": {
+    "sql": "SELECT AVG(price) FROM products WHERE category = 'pets'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT avg(price) FROM products WHERE category = 'pets'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q140",
+   "family": "avg_price_category",
+   "split": "seen",
+   "question": "Average list price in pets.",
+   "gold": "SELECT avg(price) FROM products WHERE category = 'pets'",
+   "base": {
+    "sql": "SELECT AVG(p.price) FROM products p WHERE p.category = 'pets'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT avg(price) FROM products WHERE category = 'pets'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q141",
+   "family": "avg_price_category",
+   "split": "seen",
+   "question": "Average list price in books.",
+   "gold": "SELECT avg(price) FROM products WHERE category = 'books'",
+   "base": {
+    "sql": "SELECT AVG(p.price) FROM products p WHERE p.category = 'books'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT avg(price) FROM products WHERE category = 'books'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q142",
+   "family": "avg_price_category",
+   "split": "seen",
+   "question": "Average list price in toys.",
+   "gold": "SELECT avg(price) FROM products WHERE category = 'toys'",
+   "base": {
+    "sql": "SELECT AVG(p.price) FROM products p WHERE p.category = 'toys'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT avg(price) FROM products WHERE category = 'toys'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q143",
+   "family": "avg_price_category",
+   "split": "reworded",
+   "question": "How much does a garden product cost on average?",
+   "gold": "SELECT avg(price) FROM products WHERE category = 'garden'",
+   "base": {
+    "sql": "SELECT AVG(price) FROM products WHERE category = 'garden'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT avg(price) FROM products WHERE category = 'garden'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q144",
+   "family": "avg_price_category",
+   "split": "reworded",
+   "question": "How much does a pets product cost on average?",
+   "gold": "SELECT avg(price) FROM products WHERE category = 'pets'",
+   "base": {
+    "sql": "SELECT AVG(price) FROM products WHERE category = 'pets'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT avg(price) FROM products WHERE category = 'pets'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q145",
+   "family": "avg_price_category",
+   "split": "reworded",
+   "question": "How much does a toys product cost on average?",
+   "gold": "SELECT avg(price) FROM products WHERE category = 'toys'",
+   "base": {
+    "sql": "SELECT AVG(price) FROM products WHERE category = 'toys'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT avg(price) FROM products WHERE category = 'toys'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q146",
+   "family": "avg_price_category",
+   "split": "reworded",
+   "question": "How much does a office product cost on average?",
+   "gold": "SELECT avg(price) FROM products WHERE category = 'office'",
+   "base": {
+    "sql": "SELECT AVG(price) FROM products WHERE category = 'office'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT avg(price) FROM products WHERE category = 'office'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q147",
+   "family": "avg_price_category",
+   "split": "reworded",
+   "question": "How much does a books product cost on average?",
+   "gold": "SELECT avg(price) FROM products WHERE category = 'books'",
+   "base": {
+    "sql": "SELECT AVG(price) FROM products WHERE category = 'books'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT avg(price) FROM products WHERE category = 'books'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q148",
+   "family": "units_in_order",
+   "split": "seen",
+   "question": "How many items are in order 66?",
+   "gold": "SELECT sum(qty) FROM order_items WHERE order_id = 66",
+   "base": {
+    "sql": "SELECT SUM(qty) FROM order_items WHERE order_id = 66",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(qty) FROM order_items WHERE order_id = 66",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q149",
+   "family": "units_in_order",
+   "split": "seen",
+   "question": "How many items are in order 93?",
+   "gold": "SELECT sum(qty) FROM order_items WHERE order_id = 93",
+   "base": {
+    "sql": "SELECT SUM(qty) FROM order_items WHERE order_id = 93",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(qty) FROM order_items WHERE order_id = 93",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q150",
+   "family": "units_in_order",
+   "split": "seen",
+   "question": "How many items are in order 42?",
+   "gold": "SELECT sum(qty) FROM order_items WHERE order_id = 42",
+   "base": {
+    "sql": "SELECT SUM(qty) FROM order_items WHERE order_id = 42",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(qty) FROM order_items WHERE order_id = 42",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q151",
+   "family": "units_in_order",
+   "split": "seen",
+   "question": "Count the units in order number 42.",
+   "gold": "SELECT sum(qty) FROM order_items WHERE order_id = 42",
+   "base": {
+    "sql": "SELECT SUM(qty) FROM order_items WHERE order_id = 42",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(qty) FROM order_items WHERE order_id = 42",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q152",
+   "family": "units_in_order",
+   "split": "seen",
+   "question": "Count the units in order number 93.",
+   "gold": "SELECT sum(qty) FROM order_items WHERE order_id = 93",
+   "base": {
+    "sql": "SELECT SUM(qty) FROM order_items WHERE order_id = 93",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(qty) FROM order_items WHERE order_id = 93",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q153",
+   "family": "units_in_order",
+   "split": "seen",
+   "question": "Count the units in order number 5.",
+   "gold": "SELECT sum(qty) FROM order_items WHERE order_id = 5",
+   "base": {
+    "sql": "SELECT SUM(qty) FROM order_items WHERE order_id = 5",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(qty) FROM order_items WHERE order_id = 5",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q154",
+   "family": "units_in_order",
+   "split": "reworded",
+   "question": "How many pieces did order 5 contain?",
+   "gold": "SELECT sum(qty) FROM order_items WHERE order_id = 5",
+   "base": {
+    "sql": "SELECT SUM(qty) FROM order_items WHERE order_id = 5",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(qty) FROM order_items WHERE order_id = 5",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q155",
+   "family": "units_in_order",
+   "split": "reworded",
+   "question": "How many pieces did order 120 contain?",
+   "gold": "SELECT sum(qty) FROM order_items WHERE order_id = 120",
+   "base": {
+    "sql": "SELECT SUM(qty) FROM order_items WHERE order_id = 120",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(qty) FROM order_items WHERE order_id = 120",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q156",
+   "family": "units_in_order",
+   "split": "reworded",
+   "question": "How many pieces did order 17 contain?",
+   "gold": "SELECT sum(qty) FROM order_items WHERE order_id = 17",
+   "base": {
+    "sql": "SELECT SUM(qty) FROM order_items WHERE order_id = 17",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(qty) FROM order_items WHERE order_id = 17",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q157",
+   "family": "units_in_order",
+   "split": "reworded",
+   "question": "How many pieces did order 42 contain?",
+   "gold": "SELECT sum(qty) FROM order_items WHERE order_id = 42",
+   "base": {
+    "sql": "SELECT SUM(qty) FROM order_items WHERE order_id = 42",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(qty) FROM order_items WHERE order_id = 42",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q158",
+   "family": "units_in_order",
+   "split": "reworded",
+   "question": "How many pieces did order 188 contain?",
+   "gold": "SELECT sum(qty) FROM order_items WHERE order_id = 188",
+   "base": {
+    "sql": "SELECT SUM(qty) FROM order_items WHERE order_id = 188",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(qty) FROM order_items WHERE order_id = 188",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q159",
+   "family": "top_customers",
+   "split": "seen",
+   "question": "Who are our top 10 customers by spending?",
+   "gold": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.id ORDER BY sum(o.total) DESC, c.id LIMIT 10",
+   "base": {
+    "sql": "SELECT c.name FROM customers c JOIN orders o ON c.id = o.customer_id GROUP BY c.name ORDER BY SUM(o.total) DESC LIMIT 10",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.id ORDER BY sum(o.total) DESC, c.id LIMIT 10",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q160",
+   "family": "top_customers",
+   "split": "seen",
+   "question": "Who are our top 5 customers by spending?",
+   "gold": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.id ORDER BY sum(o.total) DESC, c.id LIMIT 5",
+   "base": {
+    "sql": "SELECT c.name FROM customers c JOIN orders o ON c.id = o.customer_id GROUP BY c.name ORDER BY SUM(o.total) DESC LIMIT 5",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.id ORDER BY sum(o.total) DESC, c.id LIMIT 5",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q161",
+   "family": "top_customers",
+   "split": "seen",
+   "question": "List the 10 customers who spent the most.",
+   "gold": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.id ORDER BY sum(o.total) DESC, c.id LIMIT 10",
+   "base": {
+    "sql": "SELECT c.name FROM customers c JOIN orders o ON c.id = o.customer_id GROUP BY c.id ORDER BY SUM(o.total) DESC LIMIT 10",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.id ORDER BY sum(o.total) DESC, c.id LIMIT 10",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q162",
+   "family": "top_customers",
+   "split": "seen",
+   "question": "List the 3 customers who spent the most.",
+   "gold": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.id ORDER BY sum(o.total) DESC, c.id LIMIT 3",
+   "base": {
+    "sql": "SELECT c.name FROM customers c JOIN orders o ON c.id = o.customer_id GROUP BY c.name ORDER BY SUM(o.total) DESC LIMIT 3",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.id ORDER BY sum(o.total) DESC, c.id LIMIT 3",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q163",
+   "family": "top_customers",
+   "split": "reworded",
+   "question": "Which 5 customers bring in the most money?",
+   "gold": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.id ORDER BY sum(o.total) DESC, c.id LIMIT 5",
+   "base": {
+    "sql": "SELECT c.name FROM customers c JOIN orders o ON c.id = o.customer_id GROUP BY c.name ORDER BY SUM(o.total) DESC LIMIT 5",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.id ORDER BY sum(o.total) DESC, c.id LIMIT 5",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q164",
+   "family": "top_customers",
+   "split": "reworded",
+   "question": "Which 3 customers bring in the most money?",
+   "gold": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.id ORDER BY sum(o.total) DESC, c.id LIMIT 3",
+   "base": {
+    "sql": "SELECT c.name FROM customers c JOIN orders o ON c.id = o.customer_id GROUP BY c.name ORDER BY SUM(o.total) DESC LIMIT 3",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.id ORDER BY sum(o.total) DESC, c.id LIMIT 3",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q165",
+   "family": "top_customers",
+   "split": "reworded",
+   "question": "Which 10 customers bring in the most money?",
+   "gold": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.id ORDER BY sum(o.total) DESC, c.id LIMIT 10",
+   "base": {
+    "sql": "SELECT c.name FROM customers c JOIN orders o ON c.id = o.customer_id GROUP BY c.name ORDER BY SUM(o.total) DESC LIMIT 10",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.id ORDER BY sum(o.total) DESC, c.id LIMIT 10",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q166",
+   "family": "paid_not_shipped",
+   "split": "reworded",
+   "question": "What has been paid for but not sent?",
+   "gold": "SELECT id FROM orders WHERE status = 'paid' AND id NOT IN (SELECT order_id FROM shipments)",
+   "base": {
+    "sql": "SELECT o.id FROM orders o WHERE o.status = 'paid' AND o.id NOT IN (SELECT oi.order_id FROM order_items oi JOIN shipments s ON oi.order_id = s.order_id WHERE s.status = 'delivered')",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT id FROM orders WHERE status = 'paid' AND id NOT IN (SELECT order_id FROM shipments)",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q167",
+   "family": "signups_in_month",
+   "split": "seen",
+   "question": "How many customers signed up in March?",
+   "gold": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '03'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM customers WHERE strftime('%m', created_at) = '03'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '03'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q168",
+   "family": "signups_in_month",
+   "split": "seen",
+   "question": "How many customers signed up in February?",
+   "gold": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '02'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM customers WHERE strftime('%m', created_at) = '02'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '02'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q169",
+   "family": "signups_in_month",
+   "split": "seen",
+   "question": "How many customers signed up in April?",
+   "gold": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '04'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM customers WHERE strftime('%m', created_at) = '04'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '04'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q170",
+   "family": "signups_in_month",
+   "split": "seen",
+   "question": "Count new customer accounts from January.",
+   "gold": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '01'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM customers WHERE country IN ('GR', 'DE', 'FR', 'IT', 'ES', 'NL') AND created_at LIKE '2026-01-%' AND status = 'new'",
+    "right": false,
+    "error": "no such column: status"
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '01'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q171",
+   "family": "signups_in_month",
+   "split": "seen",
+   "question": "Count new customer accounts from March.",
+   "gold": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '03'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM customers WHERE country IN ('GR', 'DE', 'FR', 'IT', 'ES', 'NL') AND created_at LIKE '2026-03%' AND status = 'new'",
+    "right": false,
+    "error": "no such column: status"
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '03'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q172",
+   "family": "signups_in_month",
+   "split": "seen",
+   "question": "Count new customer accounts from June.",
+   "gold": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '06'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM customers WHERE country IN ('GR', 'DE', 'FR', 'IT', 'ES', 'NL') AND created_at LIKE '2026-06-%' AND status = 'new'",
+    "right": false,
+    "error": "no such column: status"
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '06'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q173",
+   "family": "signups_in_month",
+   "split": "reworded",
+   "question": "How many people registered in February?",
+   "gold": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '02'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM customers WHERE strftime('%m', created_at) = '02'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '02'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q174",
+   "family": "signups_in_month",
+   "split": "reworded",
+   "question": "How many people registered in August?",
+   "gold": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '08'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM customers WHERE strftime('%m', created_at) = '08'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '08'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q175",
+   "family": "signups_in_month",
+   "split": "reworded",
+   "question": "How many people registered in January?",
+   "gold": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '01'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM customers WHERE strftime('%m', created_at) = '01'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '01'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q176",
+   "family": "signups_in_month",
+   "split": "reworded",
+   "question": "How many people registered in April?",
+   "gold": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '04'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM customers WHERE strftime('%m', created_at) = '04'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '04'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q177",
+   "family": "signups_in_month",
+   "split": "reworded",
+   "question": "How many people registered in May?",
+   "gold": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '05'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM customers WHERE strftime('%m', created_at) = '05'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '05'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q178",
+   "family": "priciest_in_category",
+   "split": "seen",
+   "question": "What is the most expensive product in garden?",
+   "gold": "SELECT name FROM products WHERE category = 'garden' ORDER BY price DESC, id LIMIT 1",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p JOIN order_items AS oi ON p.id = oi.product_id WHERE p.category = 'garden' ORDER BY oi.price DESC LIMIT 1",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE category = 'garden' ORDER BY price DESC, id LIMIT 1",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q179",
+   "family": "priciest_in_category",
+   "split": "seen",
+   "question": "What is the most expensive product in music?",
+   "gold": "SELECT name FROM products WHERE category = 'music' ORDER BY price DESC, id LIMIT 1",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p JOIN order_items AS oi ON p.id = oi.product_id WHERE p.category = 'music' ORDER BY oi.price DESC LIMIT 1",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE category = 'music' ORDER BY price DESC, id LIMIT 1",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q180",
+   "family": "priciest_in_category",
+   "split": "seen",
+   "question": "What is the most expensive product in kitchen?",
+   "gold": "SELECT name FROM products WHERE category = 'kitchen' ORDER BY price DESC, id LIMIT 1",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p JOIN order_items AS oi ON p.id = oi.product_id WHERE p.category = 'kitchen' ORDER BY oi.price DESC LIMIT 1",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE category = 'kitchen' ORDER BY price DESC, id LIMIT 1",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q181",
+   "family": "priciest_in_category",
+   "split": "seen",
+   "question": "Which books product has the highest price?",
+   "gold": "SELECT name FROM products WHERE category = 'books' ORDER BY price DESC, id LIMIT 1",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p JOIN order_items AS oi ON p.id = oi.product_id WHERE p.category = 'books' ORDER BY oi.price DESC LIMIT 1",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE category = 'books' ORDER BY price DESC, id LIMIT 1",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q182",
+   "family": "priciest_in_category",
+   "split": "seen",
+   "question": "Which sport product has the highest price?",
+   "gold": "SELECT name FROM products WHERE category = 'sport' ORDER BY price DESC, id LIMIT 1",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p JOIN order_items AS oi ON p.id = oi.product_id WHERE oi.qty > 0 AND p.category = 'sport' ORDER BY p.price DESC LIMIT 1",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE category = 'sport' ORDER BY price DESC, id LIMIT 1",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q183",
+   "family": "priciest_in_category",
+   "split": "seen",
+   "question": "Which pets product has the highest price?",
+   "gold": "SELECT name FROM products WHERE category = 'pets' ORDER BY price DESC, id LIMIT 1",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p JOIN order_items AS oi ON p.id = oi.product_id WHERE p.category = 'pets' ORDER BY oi.price DESC LIMIT 1",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE category = 'pets' ORDER BY price DESC, id LIMIT 1",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q184",
+   "family": "priciest_in_category",
+   "split": "reworded",
+   "question": "Name the priciest item under pets.",
+   "gold": "SELECT name FROM products WHERE category = 'pets' ORDER BY price DESC, id LIMIT 1",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p JOIN order_items AS oi ON p.id = oi.product_id WHERE p.category = 'pets' ORDER BY oi.price DESC LIMIT 1",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE category = 'pets' ORDER BY price DESC, id LIMIT 1",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q185",
+   "family": "priciest_in_category",
+   "split": "reworded",
+   "question": "Name the priciest item under garden.",
+   "gold": "SELECT name FROM products WHERE category = 'garden' ORDER BY price DESC, id LIMIT 1",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p JOIN order_items AS oi ON p.id = oi.product_id WHERE p.category = 'garden' ORDER BY oi.price DESC LIMIT 1",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE category = 'garden' ORDER BY price DESC, id LIMIT 1",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q186",
+   "family": "priciest_in_category",
+   "split": "reworded",
+   "question": "Name the priciest item under toys.",
+   "gold": "SELECT name FROM products WHERE category = 'toys' ORDER BY price DESC, id LIMIT 1",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p JOIN order_items AS oi ON p.id = oi.product_id WHERE p.category = 'toys' ORDER BY oi.price DESC LIMIT 1",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE category = 'toys' ORDER BY price DESC, id LIMIT 1",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q187",
+   "family": "priciest_in_category",
+   "split": "reworded",
+   "question": "Name the priciest item under office.",
+   "gold": "SELECT name FROM products WHERE category = 'office' ORDER BY price DESC, id LIMIT 1",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p JOIN order_items AS oi ON p.id = oi.product_id WHERE p.category = 'office' ORDER BY oi.price DESC LIMIT 1",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE category = 'office' ORDER BY price DESC, id LIMIT 1",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q188",
+   "family": "priciest_in_category",
+   "split": "reworded",
+   "question": "Name the priciest item under books.",
+   "gold": "SELECT name FROM products WHERE category = 'books' ORDER BY price DESC, id LIMIT 1",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p JOIN order_items AS oi ON p.id = oi.product_id WHERE p.category = 'books' ORDER BY oi.price DESC LIMIT 1",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT name FROM products WHERE category = 'books' ORDER BY price DESC, id LIMIT 1",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q189",
+   "family": "orders_per_status",
+   "split": "reworded",
+   "question": "Break the orders down by status.",
+   "gold": "SELECT status, count(*) FROM orders GROUP BY status",
+   "base": {
+    "sql": "SELECT status, COUNT(*) FROM orders GROUP BY status",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT status FROM orders GROUP BY status",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q190",
+   "family": "shipments_to_country",
+   "split": "seen",
+   "question": "How many shipments went to customers in Germany?",
+   "gold": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'DE'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE carrier = 'delta' AND customer_id IN (SELECT id FROM customers WHERE country = 'DE')",
+    "right": false,
+    "error": "no such column: customer_id"
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'DE'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q191",
+   "family": "shipments_to_country",
+   "split": "seen",
+   "question": "How many shipments went to customers in Italy?",
+   "gold": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'IT'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE carrier = 'delta' AND status = 'delivered' AND customer_id IN (SELECT id FROM customers WHERE country = 'it')",
+    "right": false,
+    "error": "no such column: customer_id"
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'IT'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q192",
+   "family": "shipments_to_country",
+   "split": "seen",
+   "question": "How many shipments went to customers in Spain?",
+   "gold": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'ES'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE carrier = 'delta' AND status = 'delivered' AND customer_id IN (SELECT id FROM customers WHERE country = 'Spain')",
+    "right": false,
+    "error": "no such column: customer_id"
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'ES'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q193",
+   "family": "shipments_to_country",
+   "split": "seen",
+   "question": "Count parcels sent to France.",
+   "gold": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'FR'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE country = 'FR' AND status = 'delivered'",
+    "right": false,
+    "error": "no such column: country"
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'FR'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q194",
+   "family": "shipments_to_country",
+   "split": "seen",
+   "question": "Count parcels sent to Germany.",
+   "gold": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'DE'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE country = 'DE' AND status = 'delivered'",
+    "right": false,
+    "error": "no such column: country"
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'DE'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q195",
+   "family": "shipments_to_country",
+   "split": "seen",
+   "question": "Count parcels sent to Italy.",
+   "gold": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'IT'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE country = 'IT' AND status = 'delivered'",
+    "right": false,
+    "error": "no such column: country"
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'IT'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q196",
+   "family": "shipments_to_country",
+   "split": "reworded",
+   "question": "How many deliveries were addressed to France?",
+   "gold": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'FR'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE carrier = 'dhl' AND status = 'delivered' AND country = 'fr'",
+    "right": false,
+    "error": "no such column: country"
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'FR'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q197",
+   "family": "shipments_to_country",
+   "split": "reworded",
+   "question": "How many deliveries were addressed to Greece?",
+   "gold": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'GR'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE carrier = 'delta' AND status = 'delivered' AND country = 'gr'",
+    "right": false,
+    "error": "no such column: country"
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'GR'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q198",
+   "family": "shipments_to_country",
+   "split": "reworded",
+   "question": "How many deliveries were addressed to Spain?",
+   "gold": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'ES'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE country = 'Spain' AND status = 'delivered'",
+    "right": false,
+    "error": "no such column: country"
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'ES'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q199",
+   "family": "shipments_to_country",
+   "split": "reworded",
+   "question": "How many deliveries were addressed to Italy?",
+   "gold": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'IT'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE status = 'delivered' AND country = 'IT'",
+    "right": false,
+    "error": "no such column: country"
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'IT'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q200",
+   "family": "shipments_to_country",
+   "split": "reworded",
+   "question": "How many deliveries were addressed to Germany?",
+   "gold": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'DE'",
+   "base": {
+    "sql": "SELECT COUNT(*) FROM shipments WHERE carrier = 'delta' AND status = 'delivered' AND country = 'de'",
+    "right": false,
+    "error": "no such column: country"
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'DE'",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q201",
+   "family": "avg_units_per_order",
+   "split": "unseen",
+   "question": "How many units does an order contain on average?",
+   "gold": "SELECT avg(n) FROM (SELECT sum(qty) AS n FROM order_items GROUP BY order_id)",
+   "base": {
+    "sql": "SELECT AVG(qty) FROM order_items",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT avg(qty) FROM order_items",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q202",
+   "family": "avg_units_per_order",
+   "split": "unseen",
+   "question": "Average number of items per order.",
+   "gold": "SELECT avg(n) FROM (SELECT sum(qty) AS n FROM order_items GROUP BY order_id)",
+   "base": {
+    "sql": "SELECT AVG(order_items.qty) FROM order_items",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT avg(qty) FROM order_items",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q203",
+   "family": "avg_units_per_order",
+   "split": "unseen",
+   "question": "What is the mean basket size in units?",
+   "gold": "SELECT avg(n) FROM (SELECT sum(qty) AS n FROM order_items GROUP BY order_id)",
+   "base": {
+    "sql": "SELECT AVG(order_items.qty) FROM order_items",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT avg(o.total) FROM orders o",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q204",
+   "family": "least_sold",
+   "split": "unseen",
+   "question": "Which product has sold the fewest units?",
+   "gold": "SELECT p.name FROM products p JOIN order_items oi ON oi.product_id = p.id GROUP BY p.id ORDER BY sum(oi.qty), p.id LIMIT 1",
+   "base": {
+    "sql": "SELECT p.name FROM products p JOIN order_items oi ON p.id = oi.product_id GROUP BY p.name ORDER BY SUM(oi.qty) ASC LIMIT 1",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT p.name FROM order_items oi JOIN products p ON p.id = oi.product_id GROUP BY p.id ORDER BY sum(oi.qty) LIMIT 1",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q205",
+   "family": "least_sold",
+   "split": "unseen",
+   "question": "Name the slowest selling product by units sold.",
+   "gold": "SELECT p.name FROM products p JOIN order_items oi ON oi.product_id = p.id GROUP BY p.id ORDER BY sum(oi.qty), p.id LIMIT 1",
+   "base": {
+    "sql": "SELECT p.name FROM products p JOIN order_items oi ON p.id = oi.product_id GROUP BY p.name ORDER BY SUM(oi.qty) DESC LIMIT 1",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT p.name FROM order_items oi JOIN products p ON p.id = oi.product_id GROUP BY p.id ORDER BY sum(oi.qty) DESC, p.id LIMIT 1",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q206",
+   "family": "least_sold",
+   "split": "unseen",
+   "question": "What sells least, counted in units?",
+   "gold": "SELECT p.name FROM products p JOIN order_items oi ON oi.product_id = p.id GROUP BY p.id ORDER BY sum(oi.qty), p.id LIMIT 1",
+   "base": {
+    "sql": "SELECT p.name FROM products AS p JOIN order_items AS oi ON p.id = oi.product_id GROUP BY p.name ORDER BY SUM(oi.qty) ASC LIMIT 1",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT p.name FROM products p JOIN order_items oi ON oi.product_id = p.id GROUP BY p.id ORDER BY sum(oi.qty) LIMIT 1",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q207",
+   "family": "country_most_orders",
+   "split": "unseen",
+   "question": "Which country places the most orders?",
+   "gold": "SELECT c.country FROM orders o JOIN customers c ON c.id = o.customer_id GROUP BY c.country ORDER BY count(*) DESC, c.country LIMIT 1",
+   "base": {
+    "sql": "SELECT T1.country FROM customers AS T1 JOIN orders AS T2 ON T1.id = T2.customer_id GROUP BY T1.country ORDER BY COUNT(*) DESC LIMIT 1",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT c.country FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.country ORDER BY count(*) DESC, c.id LIMIT 1",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q208",
+   "family": "country_most_orders",
+   "split": "unseen",
+   "question": "Name the country with the highest order count.",
+   "gold": "SELECT c.country FROM orders o JOIN customers c ON c.id = o.customer_id GROUP BY c.country ORDER BY count(*) DESC, c.country LIMIT 1",
+   "base": {
+    "sql": "SELECT T1.country FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id GROUP BY T1.country ORDER BY COUNT(*) DESC LIMIT 1",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT c.country FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.id ORDER BY count(*) DESC, c.id LIMIT 1",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q209",
+   "family": "country_most_orders",
+   "split": "unseen",
+   "question": "Where do most of our orders come from?",
+   "gold": "SELECT c.country FROM orders o JOIN customers c ON c.id = o.customer_id GROUP BY c.country ORDER BY count(*) DESC, c.country LIMIT 1",
+   "base": {
+    "sql": "SELECT T1.country FROM customers AS T1 JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T2.created_at LIKE '2026%' GROUP BY T1.country ORDER BY COUNT(*) DESC LIMIT 1",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT c.country FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.country ORDER BY count(*) DESC, c.country LIMIT 1",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q210",
+   "family": "cancelled_value_month",
+   "split": "unseen",
+   "question": "What was the value of the orders cancelled in April?",
+   "gold": "SELECT sum(total) FROM orders WHERE status = 'cancelled' AND strftime('%m', created_at) = '04'",
+   "base": {
+    "sql": "SELECT SUM(total) FROM orders WHERE status = 'cancelled' AND strftime('%m', created_at) = '04'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(total) FROM orders WHERE strftime('%m', created_at) = '04'",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q211",
+   "family": "cancelled_value_month",
+   "split": "unseen",
+   "question": "What was the value of the orders cancelled in June?",
+   "gold": "SELECT sum(total) FROM orders WHERE status = 'cancelled' AND strftime('%m', created_at) = '06'",
+   "base": {
+    "sql": "SELECT SUM(total) FROM orders WHERE status = 'cancelled' AND strftime('%m', created_at) = '06'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(total) FROM orders WHERE strftime('%m', created_at) = '06'",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q212",
+   "family": "cancelled_value_month",
+   "split": "unseen",
+   "question": "What was the value of the orders cancelled in August?",
+   "gold": "SELECT sum(total) FROM orders WHERE status = 'cancelled' AND strftime('%m', created_at) = '08'",
+   "base": {
+    "sql": "SELECT SUM(total) FROM orders WHERE status = 'cancelled' AND strftime('%m', created_at) = '08'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(total) FROM orders WHERE strftime('%m', created_at) = '08'",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q213",
+   "family": "cancelled_value_month",
+   "split": "unseen",
+   "question": "What was the value of the orders cancelled in March?",
+   "gold": "SELECT sum(total) FROM orders WHERE status = 'cancelled' AND strftime('%m', created_at) = '03'",
+   "base": {
+    "sql": "SELECT SUM(total) FROM orders WHERE status = 'cancelled' AND strftime('%m', created_at) = '03'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(total) FROM orders WHERE strftime('%m', created_at) = '03'",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q214",
+   "family": "cancelled_value_month",
+   "split": "unseen",
+   "question": "What was the value of the orders cancelled in February?",
+   "gold": "SELECT sum(total) FROM orders WHERE status = 'cancelled' AND strftime('%m', created_at) = '02'",
+   "base": {
+    "sql": "SELECT SUM(total) FROM orders WHERE status = 'cancelled' AND strftime('%m', created_at) = '02'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(total) FROM orders WHERE strftime('%m', created_at) = '02'",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q215",
+   "family": "cancelled_value_month",
+   "split": "unseen",
+   "question": "Sum the totals of cancelled orders from March.",
+   "gold": "SELECT sum(total) FROM orders WHERE status = 'cancelled' AND strftime('%m', created_at) = '03'",
+   "base": {
+    "sql": "SELECT SUM(o.total) FROM orders o WHERE o.status = 'cancelled' AND strftime('%Y-%m', o.created_at) = '2026-03'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(total) FROM orders WHERE strftime('%m', created_at) = '03'",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q216",
+   "family": "cancelled_value_month",
+   "split": "unseen",
+   "question": "Sum the totals of cancelled orders from August.",
+   "gold": "SELECT sum(total) FROM orders WHERE status = 'cancelled' AND strftime('%m', created_at) = '08'",
+   "base": {
+    "sql": "SELECT SUM(o.total) FROM orders o WHERE o.status = 'cancelled' AND strftime('%Y-%m', o.created_at) = '2026-08'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(total) FROM orders WHERE strftime('%m', created_at) = '08'",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q217",
+   "family": "cancelled_value_month",
+   "split": "unseen",
+   "question": "Sum the totals of cancelled orders from September.",
+   "gold": "SELECT sum(total) FROM orders WHERE status = 'cancelled' AND strftime('%m', created_at) = '09'",
+   "base": {
+    "sql": "SELECT SUM(o.total) FROM orders o WHERE o.status = 'cancelled' AND strftime('%Y-%m', o.created_at) = '2026-09'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(total) FROM orders WHERE strftime('%m', created_at) = '09'",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q218",
+   "family": "cancelled_value_month",
+   "split": "unseen",
+   "question": "Sum the totals of cancelled orders from June.",
+   "gold": "SELECT sum(total) FROM orders WHERE status = 'cancelled' AND strftime('%m', created_at) = '06'",
+   "base": {
+    "sql": "SELECT SUM(o.total) FROM orders o WHERE o.status = 'cancelled' AND strftime('%Y-%m', o.created_at) = '2026-06'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(total) FROM orders WHERE strftime('%m', created_at) = '06'",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q219",
+   "family": "cancelled_value_month",
+   "split": "unseen",
+   "question": "Sum the totals of cancelled orders from January.",
+   "gold": "SELECT sum(total) FROM orders WHERE status = 'cancelled' AND strftime('%m', created_at) = '01'",
+   "base": {
+    "sql": "SELECT SUM(o.total) FROM orders o WHERE o.status = 'cancelled' AND strftime('%Y-%m', o.created_at) = '2026-01'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(total) FROM orders WHERE strftime('%m', created_at) = '01'",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q220",
+   "family": "cancelled_value_month",
+   "split": "unseen",
+   "question": "How much money did cancellations cost us in February?",
+   "gold": "SELECT sum(total) FROM orders WHERE status = 'cancelled' AND strftime('%m', created_at) = '02'",
+   "base": {
+    "sql": "SELECT SUM(o.total) FROM orders o JOIN customers c ON o.customer_id = c.id WHERE c.country IN ('GR', 'DE', 'FR', 'IT', 'ES', 'NL') AND o.status = 'cancelled' AND strftime('%Y-%m', o.created_at) = '2026-02'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'toys'",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q221",
+   "family": "cancelled_value_month",
+   "split": "unseen",
+   "question": "How much money did cancellations cost us in August?",
+   "gold": "SELECT sum(total) FROM orders WHERE status = 'cancelled' AND strftime('%m', created_at) = '08'",
+   "base": {
+    "sql": "SELECT SUM(o.total) FROM orders o JOIN customers c ON o.customer_id = c.id WHERE c.country IN ('GR', 'DE', 'FR', 'IT', 'ES', 'NL') AND o.status = 'cancelled' AND strftime('%Y-%m', o.created_at) = '2026-08'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE strftime('%m', o.created_at) = '08'",
+    "right": false,
+    "error": "no such column: o.created_at"
+   }
+  },
+  {
+   "id": "q222",
+   "family": "cancelled_value_month",
+   "split": "unseen",
+   "question": "How much money did cancellations cost us in April?",
+   "gold": "SELECT sum(total) FROM orders WHERE status = 'cancelled' AND strftime('%m', created_at) = '04'",
+   "base": {
+    "sql": "SELECT SUM(o.total) FROM orders o JOIN customers c ON o.customer_id = c.id WHERE c.country IN ('GR', 'DE', 'FR', 'IT', 'ES', 'NL') AND o.status = 'cancelled' AND strftime('%Y-%m', o.created_at) = '2026-04'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE o.status = 'cancelled' AND strftime('%m', o.created_at) = '04'",
+    "right": false,
+    "error": "no such column: o.status"
+   }
+  },
+  {
+   "id": "q223",
+   "family": "cancelled_value_month",
+   "split": "unseen",
+   "question": "How much money did cancellations cost us in May?",
+   "gold": "SELECT sum(total) FROM orders WHERE status = 'cancelled' AND strftime('%m', created_at) = '05'",
+   "base": {
+    "sql": "SELECT SUM(o.total) FROM orders o WHERE o.status = 'cancelled' AND strftime('%Y-%m', o.created_at) = '2026-05'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'toys'",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q224",
+   "family": "cancelled_value_month",
+   "split": "unseen",
+   "question": "How much money did cancellations cost us in March?",
+   "gold": "SELECT sum(total) FROM orders WHERE status = 'cancelled' AND strftime('%m', created_at) = '03'",
+   "base": {
+    "sql": "SELECT SUM(o.total) FROM orders o WHERE o.status = 'cancelled' AND strftime('%Y-%m', o.created_at) = '2026-03'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE o.status = 'cancelled' AND strftime('%m', o.created_at) = '03'",
+    "right": false,
+    "error": "no such column: o.status"
+   }
+  },
+  {
+   "id": "q225",
+   "family": "carrier_most_delivered",
+   "split": "unseen",
+   "question": "Which carrier has delivered the most shipments?",
+   "gold": "SELECT carrier FROM shipments WHERE status = 'delivered' GROUP BY carrier ORDER BY count(*) DESC, carrier LIMIT 1",
+   "base": {
+    "sql": "SELECT T1.carrier FROM shipments AS T1 INNER JOIN orders AS T2 ON T1.order_id = T2.id WHERE T2.status = 'delivered' GROUP BY T1.carrier ORDER BY COUNT(*) DESC LIMIT 1",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT carrier FROM shipments GROUP BY carrier ORDER BY count(*) DESC, carrier LIMIT 1",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q226",
+   "family": "carrier_most_delivered",
+   "split": "unseen",
+   "question": "Name the courier with the most completed deliveries.",
+   "gold": "SELECT carrier FROM shipments WHERE status = 'delivered' GROUP BY carrier ORDER BY count(*) DESC, carrier LIMIT 1",
+   "base": {
+    "sql": "SELECT T1.carrier FROM shipments AS T1 INNER JOIN orders AS T2 ON T1.order_id = T2.id WHERE T2.status = 'shipped' GROUP BY T1.carrier ORDER BY COUNT(*) DESC LIMIT 1",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT c.name FROM carriers c JOIN shipments s ON s.carrier = c.id GROUP BY c.id ORDER BY count(*) DESC, c.id LIMIT 1",
+    "right": false,
+    "error": "no such table: carriers"
+   }
+  },
+  {
+   "id": "q227",
+   "family": "carrier_most_delivered",
+   "split": "unseen",
+   "question": "Who delivers the most of our parcels successfully?",
+   "gold": "SELECT carrier FROM shipments WHERE status = 'delivered' GROUP BY carrier ORDER BY count(*) DESC, carrier LIMIT 1",
+   "base": {
+    "sql": "SELECT T1.name FROM customers AS T1 INNER JOIN shipments AS T2 ON T1.id = T2.customer_id WHERE T2.status = 'delivered' GROUP BY T1.name ORDER BY SUM(T2.qty) DESC LIMIT 1",
+    "right": false,
+    "error": "no such column: T2.customer_id"
+   },
+   "tuned": {
+    "sql": "SELECT c.name FROM customers c JOIN shipments s ON s.customer_id = c.id GROUP BY c.id ORDER BY count(*) DESC, c.id LIMIT 1",
+    "right": false,
+    "error": "no such column: s.customer_id"
+   }
+  },
+  {
+   "id": "q228",
+   "family": "country_of_order",
+   "split": "unseen",
+   "question": "Which country did order 42 come from?",
+   "gold": "SELECT c.country FROM orders o JOIN customers c ON c.id = o.customer_id WHERE o.id = 42",
+   "base": {
+    "sql": "SELECT T1.country FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T2.id = 42",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT country FROM customers WHERE id = (SELECT customer_id FROM orders WHERE id = 42)",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q229",
+   "family": "country_of_order",
+   "split": "unseen",
+   "question": "Which country did order 17 come from?",
+   "gold": "SELECT c.country FROM orders o JOIN customers c ON c.id = o.customer_id WHERE o.id = 17",
+   "base": {
+    "sql": "SELECT T1.country FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T2.id = 17",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT country FROM customers WHERE id = (SELECT customer_id FROM orders WHERE id = 17)",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q230",
+   "family": "country_of_order",
+   "split": "unseen",
+   "question": "Which country did order 151 come from?",
+   "gold": "SELECT c.country FROM orders o JOIN customers c ON c.id = o.customer_id WHERE o.id = 151",
+   "base": {
+    "sql": "SELECT T1.country FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T2.id = 151",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT country FROM customers WHERE id = (SELECT customer_id FROM orders WHERE id = 151)",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q231",
+   "family": "country_of_order",
+   "split": "unseen",
+   "question": "Which country did order 188 come from?",
+   "gold": "SELECT c.country FROM orders o JOIN customers c ON c.id = o.customer_id WHERE o.id = 188",
+   "base": {
+    "sql": "SELECT T1.country FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T2.id = 188",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT country FROM customers WHERE id = (SELECT customer_id FROM orders WHERE id = 188)",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q232",
+   "family": "country_of_order",
+   "split": "unseen",
+   "question": "Which country did order 120 come from?",
+   "gold": "SELECT c.country FROM orders o JOIN customers c ON c.id = o.customer_id WHERE o.id = 120",
+   "base": {
+    "sql": "SELECT T1.country FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T2.id = 120",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT country FROM customers WHERE id = (SELECT customer_id FROM orders WHERE id = 120)",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q233",
+   "family": "country_of_order",
+   "split": "unseen",
+   "question": "What is the customer country for order 93?",
+   "gold": "SELECT c.country FROM orders o JOIN customers c ON c.id = o.customer_id WHERE o.id = 93",
+   "base": {
+    "sql": "SELECT T1.country FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T2.id = 93",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT c.country FROM customers c JOIN orders o ON o.customer_id = c.id WHERE o.id = 93",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q234",
+   "family": "country_of_order",
+   "split": "unseen",
+   "question": "What is the customer country for order 188?",
+   "gold": "SELECT c.country FROM orders o JOIN customers c ON c.id = o.customer_id WHERE o.id = 188",
+   "base": {
+    "sql": "SELECT T1.country FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T2.id = 188",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT country FROM customers WHERE id = (SELECT customer_id FROM orders WHERE id = 188)",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q235",
+   "family": "country_of_order",
+   "split": "unseen",
+   "question": "What is the customer country for order 66?",
+   "gold": "SELECT c.country FROM orders o JOIN customers c ON c.id = o.customer_id WHERE o.id = 66",
+   "base": {
+    "sql": "SELECT T1.country FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T2.id = 66",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT c.country FROM customers c JOIN orders o ON o.customer_id = c.id WHERE o.id = 66",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q236",
+   "family": "country_of_order",
+   "split": "unseen",
+   "question": "What is the customer country for order 151?",
+   "gold": "SELECT c.country FROM orders o JOIN customers c ON c.id = o.customer_id WHERE o.id = 151",
+   "base": {
+    "sql": "SELECT T1.country FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T2.id = 151",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT c.country FROM customers c JOIN orders o ON o.customer_id = c.id WHERE o.id = 151",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q237",
+   "family": "country_of_order",
+   "split": "unseen",
+   "question": "What is the customer country for order 17?",
+   "gold": "SELECT c.country FROM orders o JOIN customers c ON c.id = o.customer_id WHERE o.id = 17",
+   "base": {
+    "sql": "SELECT T1.country FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T2.id = 17",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT c.country FROM customers c JOIN orders o ON o.customer_id = c.id WHERE o.id = 17",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q238",
+   "family": "country_of_order",
+   "split": "unseen",
+   "question": "Where is the buyer of order number 5 based?",
+   "gold": "SELECT c.country FROM orders o JOIN customers c ON c.id = o.customer_id WHERE o.id = 5",
+   "base": {
+    "sql": "SELECT T1.name FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T2.id = 5",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id WHERE o.id = 5",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q239",
+   "family": "country_of_order",
+   "split": "unseen",
+   "question": "Where is the buyer of order number 17 based?",
+   "gold": "SELECT c.country FROM orders o JOIN customers c ON c.id = o.customer_id WHERE o.id = 17",
+   "base": {
+    "sql": "SELECT T1.name FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T2.id = 17",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id WHERE o.id = 17",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q240",
+   "family": "country_of_order",
+   "split": "unseen",
+   "question": "Where is the buyer of order number 93 based?",
+   "gold": "SELECT c.country FROM orders o JOIN customers c ON c.id = o.customer_id WHERE o.id = 93",
+   "base": {
+    "sql": "SELECT T1.name FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T2.id = 93",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id WHERE o.id = 93",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q241",
+   "family": "country_of_order",
+   "split": "unseen",
+   "question": "Where is the buyer of order number 42 based?",
+   "gold": "SELECT c.country FROM orders o JOIN customers c ON c.id = o.customer_id WHERE o.id = 42",
+   "base": {
+    "sql": "SELECT T1.name FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T2.id = 42",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id WHERE o.id = 42",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q242",
+   "family": "country_of_order",
+   "split": "unseen",
+   "question": "Where is the buyer of order number 66 based?",
+   "gold": "SELECT c.country FROM orders o JOIN customers c ON c.id = o.customer_id WHERE o.id = 66",
+   "base": {
+    "sql": "SELECT T1.name FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T2.id = 66",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id WHERE o.id = 66",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q243",
+   "family": "units_in_category",
+   "split": "unseen",
+   "question": "How many units of pets products have been sold?",
+   "gold": "SELECT sum(oi.qty) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'pets'",
+   "base": {
+    "sql": "SELECT SUM(oi.qty) FROM order_items oi JOIN products p ON oi.product_id = p.id WHERE p.category = 'pets'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(qty) FROM order_items WHERE product_id = (SELECT id FROM products WHERE category = 'pets')",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q244",
+   "family": "units_in_category",
+   "split": "unseen",
+   "question": "How many units of kitchen products have been sold?",
+   "gold": "SELECT sum(oi.qty) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'kitchen'",
+   "base": {
+    "sql": "SELECT SUM(order_items.qty) FROM order_items JOIN products ON order_items.product_id = products.id WHERE products.category = 'kitchen'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(qty) FROM order_items WHERE product_id IN (SELECT id FROM products WHERE category = 'kitchen')",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q245",
+   "family": "units_in_category",
+   "split": "unseen",
+   "question": "How many units of toys products have been sold?",
+   "gold": "SELECT sum(oi.qty) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'toys'",
+   "base": {
+    "sql": "SELECT SUM(oi.qty) FROM order_items oi JOIN products p ON oi.product_id = p.id WHERE p.category = 'toys'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(qty) FROM order_items WHERE product_id IN (SELECT id FROM products WHERE category = 'toys')",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q246",
+   "family": "units_in_category",
+   "split": "unseen",
+   "question": "How many units of office products have been sold?",
+   "gold": "SELECT sum(oi.qty) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'office'",
+   "base": {
+    "sql": "SELECT SUM(order_items.qty) FROM order_items JOIN products ON order_items.product_id = products.id WHERE products.category = 'office'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(qty) FROM order_items WHERE product_id IN (SELECT id FROM products WHERE category = 'office')",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q247",
+   "family": "units_in_category",
+   "split": "unseen",
+   "question": "How many units of garden products have been sold?",
+   "gold": "SELECT sum(oi.qty) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'garden'",
+   "base": {
+    "sql": "SELECT SUM(order_items.qty) FROM products JOIN order_items ON products.id = order_items.product_id WHERE products.category = 'garden'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(qty) FROM order_items WHERE product_id IN (SELECT id FROM products WHERE category = 'garden')",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q248",
+   "family": "units_in_category",
+   "split": "unseen",
+   "question": "Count the units sold in pets.",
+   "gold": "SELECT sum(oi.qty) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'pets'",
+   "base": {
+    "sql": "SELECT SUM(order_items.qty) FROM order_items JOIN products ON order_items.product_id = products.id WHERE products.category = 'pets'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(qty) FROM order_items WHERE product_id = (SELECT id FROM products WHERE category = 'pets')",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q249",
+   "family": "units_in_category",
+   "split": "unseen",
+   "question": "Count the units sold in books.",
+   "gold": "SELECT sum(oi.qty) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'books'",
+   "base": {
+    "sql": "SELECT SUM(order_items.qty) FROM order_items JOIN products ON order_items.product_id = products.id WHERE products.category = 'books'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(qty) FROM order_items WHERE product_id = (SELECT id FROM products WHERE category = 'books')",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q250",
+   "family": "units_in_category",
+   "split": "unseen",
+   "question": "Count the units sold in toys.",
+   "gold": "SELECT sum(oi.qty) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'toys'",
+   "base": {
+    "sql": "SELECT SUM(oi.qty) FROM order_items oi JOIN products p ON oi.product_id = p.id WHERE p.category = 'toys'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(qty) FROM order_items WHERE product_id IN (SELECT id FROM products WHERE category = 'toys')",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q251",
+   "family": "units_in_category",
+   "split": "unseen",
+   "question": "Count the units sold in music.",
+   "gold": "SELECT sum(oi.qty) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'music'",
+   "base": {
+    "sql": "SELECT SUM(order_items.qty) FROM order_items JOIN products ON order_items.product_id = products.id WHERE products.category = 'music'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(qty) FROM order_items WHERE product_id = (SELECT id FROM products WHERE category = 'music')",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q252",
+   "family": "units_in_category",
+   "split": "unseen",
+   "question": "Count the units sold in garden.",
+   "gold": "SELECT sum(oi.qty) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'garden'",
+   "base": {
+    "sql": "SELECT SUM(oi.qty) FROM order_items oi JOIN products p ON oi.product_id = p.id WHERE p.category = 'garden'",
+    "right": true,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(qty) FROM order_items WHERE product_id = (SELECT id FROM products WHERE category = 'garden')",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q253",
+   "family": "units_in_category",
+   "split": "unseen",
+   "question": "How many office items left the warehouse in orders?",
+   "gold": "SELECT sum(oi.qty) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'office'",
+   "base": {
+    "sql": "SELECT SUM(p.stock - oi.qty) FROM products p JOIN order_items oi ON p.id = oi.product_id WHERE p.category = 'office'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(qty) FROM order_items WHERE product_id IN (SELECT id FROM products WHERE category = 'office')",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q254",
+   "family": "units_in_category",
+   "split": "unseen",
+   "question": "How many music items left the warehouse in orders?",
+   "gold": "SELECT sum(oi.qty) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'music'",
+   "base": {
+    "sql": "SELECT SUM(p.stock - oi.qty) FROM products p JOIN order_items oi ON p.id = oi.product_id WHERE p.category = 'music'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(qty) FROM order_items WHERE product_id IN (SELECT id FROM products WHERE category = 'music')",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q255",
+   "family": "units_in_category",
+   "split": "unseen",
+   "question": "How many books items left the warehouse in orders?",
+   "gold": "SELECT sum(oi.qty) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'books'",
+   "base": {
+    "sql": "SELECT SUM(p.stock - oi.qty) FROM products p JOIN order_items oi ON p.id = oi.product_id WHERE p.category = 'books'",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT sum(qty) FROM order_items WHERE product_id IN (SELECT id FROM products WHERE category = 'books')",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q256",
+   "family": "units_in_category",
+   "split": "unseen",
+   "question": "How many toys items left the warehouse in orders?",
+   "gold": "SELECT sum(oi.qty) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'toys'",
+   "base": {
+    "sql": "SELECT SUM(T1.qty) FROM products AS T1 INNER JOIN order_items AS T2 ON T1.id = T2.product_id WHERE T1.category = 'toys'",
+    "right": false,
+    "error": "no such column: T1.qty"
+   },
+   "tuned": {
+    "sql": "SELECT sum(qty) FROM order_items WHERE product_id IN (SELECT id FROM products WHERE category = 'toys')",
+    "right": true,
+    "error": null
+   }
+  },
+  {
+   "id": "q257",
+   "family": "units_in_category",
+   "split": "unseen",
+   "question": "How many pets items left the warehouse in orders?",
+   "gold": "SELECT sum(oi.qty) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'pets'",
+   "base": {
+    "sql": "SELECT SUM(CASE WHEN T1.category = 'pets' THEN T3.stock ELSE 0 END) FROM products AS T1 INNER JOIN order_items AS T2 ON T1.id = T2.product_id INNER JOIN orders AS T3 ON T2.order_id = T3.id WHERE T3.status = 'shipped' AND T3.created_at LIKE '2026%'",
+    "right": false,
+    "error": "no such column: T3.stock"
+   },
+   "tuned": {
+    "sql": "SELECT sum(qty) FROM order_items WHERE product_id = (SELECT id FROM products WHERE category = 'pets')",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q258",
+   "family": "orders_per_customer_country",
+   "split": "unseen",
+   "question": "On average, how many orders has each customer from Spain placed?",
+   "gold": "SELECT avg(n) FROM (SELECT count(o.id) AS n FROM customers c LEFT JOIN orders o ON o.customer_id = c.id WHERE c.country = 'ES' GROUP BY c.id)",
+   "base": {
+    "sql": "SELECT c.name, AVG(o.id) as avg_orders FROM customers c JOIN orders o ON c.id = o.customer_id WHERE c.country = 'Spain' GROUP BY c.name",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id WHERE c.country = 'ES' GROUP BY c.id",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q259",
+   "family": "orders_per_customer_country",
+   "split": "unseen",
+   "question": "On average, how many orders has each customer from France placed?",
+   "gold": "SELECT avg(n) FROM (SELECT count(o.id) AS n FROM customers c LEFT JOIN orders o ON o.customer_id = c.id WHERE c.country = 'FR' GROUP BY c.id)",
+   "base": {
+    "sql": "SELECT c.name, AVG(o.id) as avg_orders FROM customers c JOIN orders o ON c.id = o.customer_id WHERE c.country = 'FR' GROUP BY c.name",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id WHERE c.country = 'FR' GROUP BY c.id",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q260",
+   "family": "orders_per_customer_country",
+   "split": "unseen",
+   "question": "On average, how many orders has each customer from Germany placed?",
+   "gold": "SELECT avg(n) FROM (SELECT count(o.id) AS n FROM customers c LEFT JOIN orders o ON o.customer_id = c.id WHERE c.country = 'DE' GROUP BY c.id)",
+   "base": {
+    "sql": "SELECT c.name, AVG(o.id) as avg_orders FROM customers c JOIN orders o ON c.id = o.customer_id WHERE c.country = 'DE' GROUP BY c.name",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id WHERE c.country = 'DE' GROUP BY c.id",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q261",
+   "family": "orders_per_customer_country",
+   "split": "unseen",
+   "question": "On average, how many orders has each customer from Greece placed?",
+   "gold": "SELECT avg(n) FROM (SELECT count(o.id) AS n FROM customers c LEFT JOIN orders o ON o.customer_id = c.id WHERE c.country = 'GR' GROUP BY c.id)",
+   "base": {
+    "sql": "SELECT c.name, AVG(o.id) as avg_orders FROM customers c JOIN orders o ON c.id = o.customer_id WHERE c.country = 'GR' GROUP BY c.name",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id WHERE c.country = 'GR' GROUP BY c.id",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q262",
+   "family": "orders_per_customer_country",
+   "split": "unseen",
+   "question": "On average, how many orders has each customer from the Netherlands placed?",
+   "gold": "SELECT avg(n) FROM (SELECT count(o.id) AS n FROM customers c LEFT JOIN orders o ON o.customer_id = c.id WHERE c.country = 'NL' GROUP BY c.id)",
+   "base": {
+    "sql": "SELECT c.name, AVG(o.id) as avg_orders FROM customers c JOIN orders o ON c.id = o.customer_id WHERE c.country = 'NL' GROUP BY c.name",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id WHERE c.country = 'NL' GROUP BY c.id",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q263",
+   "family": "orders_per_customer_country",
+   "split": "unseen",
+   "question": "Average number of orders per customer in Italy.",
+   "gold": "SELECT avg(n) FROM (SELECT count(o.id) AS n FROM customers c LEFT JOIN orders o ON o.customer_id = c.id WHERE c.country = 'IT' GROUP BY c.id)",
+   "base": {
+    "sql": "SELECT AVG(T1.orders) FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T1.country = 'IT'",
+    "right": false,
+    "error": "no such column: T1.orders"
+   },
+   "tuned": {
+    "sql": "SELECT avg(o.id) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'IT'",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q264",
+   "family": "orders_per_customer_country",
+   "split": "unseen",
+   "question": "Average number of orders per customer in Germany.",
+   "gold": "SELECT avg(n) FROM (SELECT count(o.id) AS n FROM customers c LEFT JOIN orders o ON o.customer_id = c.id WHERE c.country = 'DE' GROUP BY c.id)",
+   "base": {
+    "sql": "SELECT AVG(T1.orders) FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T1.country = 'DE'",
+    "right": false,
+    "error": "no such column: T1.orders"
+   },
+   "tuned": {
+    "sql": "SELECT avg(o.id) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'DE'",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q265",
+   "family": "orders_per_customer_country",
+   "split": "unseen",
+   "question": "Average number of orders per customer in Greece.",
+   "gold": "SELECT avg(n) FROM (SELECT count(o.id) AS n FROM customers c LEFT JOIN orders o ON o.customer_id = c.id WHERE c.country = 'GR' GROUP BY c.id)",
+   "base": {
+    "sql": "SELECT AVG(T1.orders) FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T1.country = 'GR'",
+    "right": false,
+    "error": "no such column: T1.orders"
+   },
+   "tuned": {
+    "sql": "SELECT avg(o.id) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'GR'",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q266",
+   "family": "orders_per_customer_country",
+   "split": "unseen",
+   "question": "Average number of orders per customer in the Netherlands.",
+   "gold": "SELECT avg(n) FROM (SELECT count(o.id) AS n FROM customers c LEFT JOIN orders o ON o.customer_id = c.id WHERE c.country = 'NL' GROUP BY c.id)",
+   "base": {
+    "sql": "SELECT AVG(T1.orders) FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T1.country = 'NL'",
+    "right": false,
+    "error": "no such column: T1.orders"
+   },
+   "tuned": {
+    "sql": "SELECT avg(o.id) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'NL'",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q267",
+   "family": "orders_per_customer_country",
+   "split": "unseen",
+   "question": "Average number of orders per customer in France.",
+   "gold": "SELECT avg(n) FROM (SELECT count(o.id) AS n FROM customers c LEFT JOIN orders o ON o.customer_id = c.id WHERE c.country = 'FR' GROUP BY c.id)",
+   "base": {
+    "sql": "SELECT AVG(T1.orders) FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T1.country = 'FR'",
+    "right": false,
+    "error": "no such column: T1.orders"
+   },
+   "tuned": {
+    "sql": "SELECT avg(o.id) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'FR'",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q268",
+   "family": "orders_per_customer_country",
+   "split": "unseen",
+   "question": "How many orders does a typical customer from Spain make?",
+   "gold": "SELECT avg(n) FROM (SELECT count(o.id) AS n FROM customers c LEFT JOIN orders o ON o.customer_id = c.id WHERE c.country = 'ES' GROUP BY c.id)",
+   "base": {
+    "sql": "SELECT COUNT(T1.id) FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T1.country = 'Spain' GROUP BY T1.id",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE customer_id IN (SELECT id FROM customers WHERE country = 'ES')",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q269",
+   "family": "orders_per_customer_country",
+   "split": "unseen",
+   "question": "How many orders does a typical customer from France make?",
+   "gold": "SELECT avg(n) FROM (SELECT count(o.id) AS n FROM customers c LEFT JOIN orders o ON o.customer_id = c.id WHERE c.country = 'FR' GROUP BY c.id)",
+   "base": {
+    "sql": "SELECT COUNT(T1.id) FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T1.country = 'FR' GROUP BY T1.id",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE customer_id IN (SELECT id FROM customers WHERE country = 'FR')",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q270",
+   "family": "orders_per_customer_country",
+   "split": "unseen",
+   "question": "How many orders does a typical customer from the Netherlands make?",
+   "gold": "SELECT avg(n) FROM (SELECT count(o.id) AS n FROM customers c LEFT JOIN orders o ON o.customer_id = c.id WHERE c.country = 'NL' GROUP BY c.id)",
+   "base": {
+    "sql": "SELECT COUNT(T1.id) FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T1.country = 'NL' GROUP BY T1.id",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE customer_id IN (SELECT id FROM customers WHERE country = 'NL')",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q271",
+   "family": "orders_per_customer_country",
+   "split": "unseen",
+   "question": "How many orders does a typical customer from Germany make?",
+   "gold": "SELECT avg(n) FROM (SELECT count(o.id) AS n FROM customers c LEFT JOIN orders o ON o.customer_id = c.id WHERE c.country = 'DE' GROUP BY c.id)",
+   "base": {
+    "sql": "SELECT COUNT(T1.id) FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T1.country = 'DE' GROUP BY T1.id",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE customer_id IN (SELECT id FROM customers WHERE country = 'DE')",
+    "right": false,
+    "error": null
+   }
+  },
+  {
+   "id": "q272",
+   "family": "orders_per_customer_country",
+   "split": "unseen",
+   "question": "How many orders does a typical customer from Italy make?",
+   "gold": "SELECT avg(n) FROM (SELECT count(o.id) AS n FROM customers c LEFT JOIN orders o ON o.customer_id = c.id WHERE c.country = 'IT' GROUP BY c.id)",
+   "base": {
+    "sql": "SELECT COUNT(T1.id) FROM customers AS T1 INNER JOIN orders AS T2 ON T1.id = T2.customer_id WHERE T1.country = 'IT' GROUP BY T1.id",
+    "right": false,
+    "error": null
+   },
+   "tuned": {
+    "sql": "SELECT count(*) FROM orders WHERE customer_id IN (SELECT id FROM customers WHERE country = 'IT')",
+    "right": false,
+    "error": null
+   }
+  }
+ ],
+ "worst": {
+  "family": "cancelled_value_month",
+  "trained": false,
+  "of": 15,
+  "base": "SELECT SUM(total) FROM orders WHERE status = 'cancelled' AND strftime('%m', created_at) = '04'",
+  "tuned": "SELECT sum(total) FROM orders WHERE strftime('%m', created_at) = '04'",
+  "question": "What was the value of the orders cancelled in April?",
+  "gold": "SELECT sum(total) FROM orders WHERE status = 'cancelled' AND strftime('%m', created_at) = '04'",
+  "baseRight": 15,
+  "tunedRight": 0
+ },
+ "training": {
+  "base": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "revision": "2e1fd397ee46e1388853d2af2c993145b0f1098a",
+  "examples": 384,
+  "steps": 96,
+  "seconds": 433.5,
+  "trainable": 18464768,
+  "total": 1562179072,
+  "peakMemoryMb": 4480,
+  "gpu": "NVIDIA GeForce RTX 4060",
+  "settings": {
+   "epochs": 2,
+   "batch": 8,
+   "micro_batch": 2,
+   "lr": 0.0002,
+   "warmup_steps": 10,
+   "lora_r": 16,
+   "lora_alpha": 32,
+   "lora_dropout": 0.05,
+   "target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+   ]
+  },
+  "adapterSha256": "f191b1a27e9f69c0d1245786092394bb1d372f75d70fcd1974d702b129f4bbb4",
+  "adapterBytes": 73911112,
+  "loss": [
+   [
+    0,
+    0.51466
+   ],
+   [
+    1,
+    0.30853
+   ],
+   [
+    2,
+    0.34129
+   ],
+   [
+    3,
+    0.37436
+   ],
+   [
+    4,
+    0.21799
+   ],
+   [
+    5,
+    0.06125
+   ],
+   [
+    6,
+    0.29905
+   ],
+   [
+    7,
+    0.12627
+   ],
+   [
+    8,
+    0.11844
+   ],
+   [
+    9,
+    0.04536
+   ],
+   [
+    10,
+    0.09542
+   ],
+   [
+    11,
+    0.09304
+   ],
+   [
+    12,
+    0.05166
+   ],
+   [
+    13,
+    0.05155
+   ],
+   [
+    14,
+    0.02265
+   ],
+   [
+    15,
+    0.05878
+   ],
+   [
+    16,
+    0.03156
+   ],
+   [
+    17,
+    0.02372
+   ],
+   [
+    18,
+    0.00238
+   ],
+   [
+    19,
+    0.02725
+   ],
+   [
+    20,
+    0.02011
+   ],
+   [
+    21,
+    0.01046
+   ],
+   [
+    22,
+    0.01123
+   ],
+   [
+    23,
+    0.01591
+   ],
+   [
+    24,
+    0.01297
+   ],
+   [
+    25,
+    0.01437
+   ],
+   [
+    26,
+    0.01067
+   ],
+   [
+    27,
+    0.00039
+   ],
+   [
+    28,
+    0.00058
+   ],
+   [
+    29,
+    0.03621
+   ],
+   [
+    30,
+    0.1527
+   ],
+   [
+    31,
+    0.01429
+   ],
+   [
+    32,
+    0.00274
+   ],
+   [
+    33,
+    0.00084
+   ],
+   [
+    34,
+    0.00972
+   ],
+   [
+    35,
+    0.01677
+   ],
+   [
+    36,
+    0.00592
+   ],
+   [
+    37,
+    0.00203
+   ],
+   [
+    38,
+    0.00309
+   ],
+   [
+    39,
+    0.00309
+   ],
+   [
+    40,
+    0.00464
+   ],
+   [
+    41,
+    0.0052
+   ],
+   [
+    42,
+    0.00557
+   ],
+   [
+    43,
+    0.01059
+   ],
+   [
+    44,
+    0.00165
+   ],
+   [
+    45,
+    0.0065
+   ],
+   [
+    46,
+    0.00558
+   ],
+   [
+    47,
+    0.00595
+   ],
+   [
+    48,
+    0.0013
+   ],
+   [
+    49,
+    0.0007
+   ],
+   [
+    50,
+    0.00373
+   ],
+   [
+    51,
+    0.00181
+   ],
+   [
+    52,
+    0.00195
+   ],
+   [
+    53,
+    0.00169
+   ],
+   [
+    54,
+    0.0007
+   ],
+   [
+    55,
+    0.00074
+   ],
+   [
+    56,
+    0.00028
+   ],
+   [
+    57,
+    0.00046
+   ],
+   [
+    58,
+    0.00128
+   ],
+   [
+    59,
+    0.00059
+   ],
+   [
+    60,
+    0.00053
+   ],
+   [
+    61,
+    0.00028
+   ],
+   [
+    62,
+    0.00032
+   ],
+   [
+    63,
+    0.00035
+   ],
+   [
+    64,
+    0.00071
+   ],
+   [
+    65,
+    0.00024
+   ],
+   [
+    66,
+    0.00042
+   ],
+   [
+    67,
+    0.00019
+   ],
+   [
+    68,
+    0.00036
+   ],
+   [
+    69,
+    0.00033
+   ],
+   [
+    70,
+    0.00061
+   ],
+   [
+    71,
+    0.00035
+   ],
+   [
+    72,
+    0.00044
+   ],
+   [
+    73,
+    0.00056
+   ],
+   [
+    74,
+    0.00049
+   ],
+   [
+    75,
+    0.00026
+   ],
+   [
+    76,
+    0.00056
+   ],
+   [
+    77,
+    0.00042
+   ],
+   [
+    78,
+    0.0002
+   ],
+   [
+    79,
+    0.00042
+   ],
+   [
+    80,
+    0.00063
+   ],
+   [
+    81,
+    0.00045
+   ],
+   [
+    82,
+    0.00024
+   ],
+   [
+    83,
+    0.00032
+   ],
+   [
+    84,
+    0.00019
+   ],
+   [
+    85,
+    0.00025
+   ],
+   [
+    86,
+    0.0002
+   ],
+   [
+    87,
+    0.00072
+   ],
+   [
+    88,
+    0.0002
+   ],
+   [
+    89,
+    0.00018
+   ],
+   [
+    90,
+    0.00025
+   ],
+   [
+    91,
+    0.00045
+   ],
+   [
+    92,
+    0.00031
+   ],
+   [
+    93,
+    0.00036
+   ],
+   [
+    94,
+    0.00033
+   ],
+   [
+    95,
+    0.00029
+   ]
+  ]
+ },
+ "runs": {
+  "base": {
+   "model": "base",
+   "base": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+   "revision": "2e1fd397ee46e1388853d2af2c993145b0f1098a",
+   "adapter_sha256": null,
+   "questions": 272,
+   "batch": 16,
+   "max_new_tokens": 160,
+   "decoding": "greedy",
+   "seconds": 81,
+   "gpu": "NVIDIA GeForce RTX 4060",
+   "versions": {
+    "python": "3.12.13",
+    "torch": "2.14.1+cu130",
+    "transformers": "5.20.2",
+    "peft": "0.21.2"
+   }
+  },
+  "tuned": {
+   "model": "tuned",
+   "base": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+   "revision": "2e1fd397ee46e1388853d2af2c993145b0f1098a",
+   "adapter_sha256": "f191b1a27e9f69c0d1245786092394bb1d372f75d70fcd1974d702b129f4bbb4",
+   "questions": 272,
+   "batch": 16,
+   "max_new_tokens": 160,
+   "decoding": "greedy",
+   "seconds": 117.1,
+   "gpu": "NVIDIA GeForce RTX 4060",
+   "versions": {
+    "python": "3.12.13",
+    "torch": "2.14.1+cu130",
+    "transformers": "5.20.2",
+    "peft": "0.21.2"
+   }
+  }
+ }
+}

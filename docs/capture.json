@@ -1,0 +1,13 @@
+{
+ "headline": "A LoRA adapter, trained in 7 minutes on 384 examples, took a 1.5B model from 55.9% to 82.0% right on one shop's questions. On the kinds of question it never trained on: 55.6% to 33.3%.",
+ "grid": [
+  "57.3%",
+  "100.0%",
+  "54.4%",
+  "98.9%",
+  "55.6%",
+  "33.3%",
+  "55.9%",
+  "82.0%"
+ ]
+}

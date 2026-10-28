@@ -1,0 +1,33 @@
+# The two steps that need a GPU: train the LoRA adapter, and ask the base and
+# the tuned model every test question. Everything a CI runner can check (the
+# dataset, the scoring, the page, the gates) is TypeScript in the folder above.
+#
+#   uv sync
+#   uv run python train.py
+#   uv run python predict.py            # the base model
+#   uv run python predict.py --tuned    # base plus ../adapter
+#
+# On Windows, torch comes from the CUDA 13.0 index below; it was measured on an
+# RTX 4060 with 8 GB.
+[project]
+name = "sqltune-train"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "torch==2.14.1",
+    "transformers>=5.19,<5.21",
+    "peft>=0.17",
+    "accelerate>=1.10",
+    "safetensors>=0.6",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu130", marker = "sys_platform == 'win32'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true

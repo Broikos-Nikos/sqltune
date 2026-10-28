@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sqltune: what a LoRA adapter adds to a small model that already writes SQL</title>
+    <meta name="description" content="A LoRA adapter, trained in 7 minutes on 384 examples, took a 1.5B model from 55.9% to 82.0% right on one shop's questions. On the kinds of question it never trained on: 55.6% to 33.3%." />
+    <meta property="og:title" content="sqltune: what a LoRA adapter adds to a small model that already writes SQL" />
+    <meta property="og:description" content="A LoRA adapter, trained in 7 minutes on 384 examples, took a 1.5B model from 55.9% to 82.0% right on one shop's questions. On the kinds of question it never trained on: 55.6% to 33.3%." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://broikos-nikos.github.io/sqltune/" />
+    <meta property="og:image" content="https://broikos-nikos.github.io/sqltune/card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#080604" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23080604'/%3E%3Crect x='3' y='9' width='3' height='4' fill='%239a8f88'/%3E%3Crect x='9' y='4' width='3' height='9' fill='%23ff6a00'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <header class="masthead">
+      <p class="mono kicker">sqltune</p>
+      <h1 id="headline"></h1>
+      <p class="lead" id="lead"></p>
+    </header>
+    <main>
+      <section class="panel" aria-labelledby="grid-h">
+        <h2 id="grid-h" class="mono label">Base against tuned, every answer run on the database</h2>
+        <table id="grid" class="grid"></table>
+        <p class="note" id="grid-t"></p>
+      </section>
+
+      <section class="panel" aria-labelledby="w-h">
+        <h2 id="w-h" class="mono label">Where tuning cost it most</h2>
+        <div id="worst" class="worst"></div>
+      </section>
+
+      <section class="panel" aria-labelledby="q-h">
+        <h2 id="q-h" class="mono label">Every answer, run on the database</h2>
+        <div class="filters">
+          <div class="chips" role="group" aria-label="Outcome">
+            <button type="button" class="chip" data-k="outcome" data-v="fixed">Tuned fixed it</button>
+            <button type="button" class="chip" data-k="outcome" data-v="broke">Tuned broke it</button>
+            <button type="button" class="chip" data-k="outcome" data-v="both">Both right</button>
+            <button type="button" class="chip" data-k="outcome" data-v="neither">Both wrong</button>
+          </div>
+          <div class="chips" role="group" aria-label="Part of the test">
+            <button type="button" class="chip" data-k="split" data-v="all">All parts</button>
+            <button type="button" class="chip" data-k="split" data-v="seen">New values</button>
+            <button type="button" class="chip" data-k="split" data-v="reworded">New wording</button>
+            <button type="button" class="chip" data-k="split" data-v="unseen">Never trained on</button>
+          </div>
+        </div>
+        <p class="note mono" id="count" role="status" aria-live="polite"></p>
+        <ol id="questions" class="questions"></ol>
+      </section>
+
+      <section aria-labelledby="t-h">
+        <h2 id="t-h" class="mono label">The training run</h2>
+        <figure class="chart"><svg id="loss" viewBox="0 0 640 200" role="img" aria-label="Training loss at every step"></svg><figcaption class="note">Loss on the answer tokens at every step. The prompt, the schema and the question, is masked out of it.</figcaption></figure>
+        <dl id="train-facts" class="facts"></dl>
+      </section>
+
+      <section aria-labelledby="fail-h">
+        <h2 id="fail-h" class="mono label">What it does not show</h2>
+        <div id="failures" class="failures"></div>
+      </section>
+    </main>
+    <footer class="foot mono">MIT licence for the code and the adapter. The base model is Apache 2.0. Synthetic shop data. Source: <a href="https://github.com/Broikos-Nikos/sqltune">github.com/Broikos-Nikos/sqltune</a></footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

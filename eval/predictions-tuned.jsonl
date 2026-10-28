@@ -1,0 +1,272 @@
+{"id": "q001", "output": "SELECT count(*) FROM orders WHERE status = 'shipped'"}
+{"id": "q002", "output": "SELECT count(*) FROM orders WHERE status = 'paid'"}
+{"id": "q003", "output": "SELECT count(*) FROM orders WHERE status = 'cancelled'"}
+{"id": "q004", "output": "SELECT count(*) FROM orders WHERE status = 'cancelled'"}
+{"id": "q005", "output": "SELECT count(*) FROM orders WHERE status = 'new'"}
+{"id": "q006", "output": "SELECT count(*) FROM orders WHERE status = 'paid'"}
+{"id": "q007", "output": "SELECT count(*) FROM orders WHERE status = 'shipped'"}
+{"id": "q008", "output": "SELECT count(*) FROM orders WHERE status = 'cancelled'"}
+{"id": "q009", "output": "SELECT count(*) FROM orders WHERE status = 'new'"}
+{"id": "q010", "output": "SELECT count(*) FROM orders WHERE status = 'paid'"}
+{"id": "q011", "output": "SELECT count(*) FROM customers WHERE country = 'IT'"}
+{"id": "q012", "output": "SELECT count(*) FROM customers WHERE country = 'NL'"}
+{"id": "q013", "output": "SELECT count(*) FROM customers WHERE country = 'FR'"}
+{"id": "q014", "output": "SELECT count(*) FROM customers WHERE country = 'FR'"}
+{"id": "q015", "output": "SELECT count(*) FROM customers WHERE country = 'GR'"}
+{"id": "q016", "output": "SELECT count(*) FROM customers WHERE country = 'IT'"}
+{"id": "q017", "output": "SELECT count(*) FROM customers WHERE country = 'ES'"}
+{"id": "q018", "output": "SELECT count(*) FROM customers WHERE country = 'FR'"}
+{"id": "q019", "output": "SELECT count(*) FROM customers WHERE country = 'GR'"}
+{"id": "q020", "output": "SELECT count(*) FROM customers WHERE country = 'IT'"}
+{"id": "q021", "output": "SELECT count(*) FROM customers WHERE country = 'DE'"}
+{"id": "q022", "output": "SELECT sum(total) FROM orders WHERE status = 'shipped'"}
+{"id": "q023", "output": "SELECT sum(total) FROM orders WHERE status = 'paid'"}
+{"id": "q024", "output": "SELECT sum(total) FROM orders WHERE status = 'cancelled'"}
+{"id": "q025", "output": "SELECT sum(total) FROM orders WHERE status = 'shipped'"}
+{"id": "q026", "output": "SELECT sum(total) FROM orders WHERE status = 'paid'"}
+{"id": "q027", "output": "SELECT sum(total) FROM orders WHERE status = 'new'"}
+{"id": "q028", "output": "SELECT sum(total) FROM orders WHERE status = 'new'"}
+{"id": "q029", "output": "SELECT sum(total) FROM orders WHERE status = 'cancelled'"}
+{"id": "q030", "output": "SELECT sum(total) FROM orders WHERE status = 'paid'"}
+{"id": "q031", "output": "SELECT sum(total) FROM orders WHERE status = 'shipped'"}
+{"id": "q032", "output": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'DE'"}
+{"id": "q033", "output": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'GR'"}
+{"id": "q034", "output": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'FR'"}
+{"id": "q035", "output": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'IT'"}
+{"id": "q036", "output": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'FR'"}
+{"id": "q037", "output": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'GR'"}
+{"id": "q038", "output": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'GR'"}
+{"id": "q039", "output": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'FR'"}
+{"id": "q040", "output": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'IT'"}
+{"id": "q041", "output": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'NL'"}
+{"id": "q042", "output": "SELECT avg(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'DE'"}
+{"id": "q043", "output": "SELECT p.name FROM order_items oi JOIN products p ON p.id = oi.product_id GROUP BY p.id ORDER BY sum(oi.qty * oi.price) DESC, p.id LIMIT 3"}
+{"id": "q044", "output": "SELECT p.name FROM order_items oi JOIN products p ON p.id = oi.product_id GROUP BY p.id ORDER BY sum(oi.qty * oi.price) DESC, p.id LIMIT 5"}
+{"id": "q045", "output": "SELECT p.name FROM order_items oi JOIN products p ON p.id = oi.product_id GROUP BY p.id ORDER BY sum(oi.qty * oi.price) DESC, p.id LIMIT 5"}
+{"id": "q046", "output": "SELECT p.name FROM order_items oi JOIN products p ON p.id = oi.product_id GROUP BY p.id ORDER BY sum(oi.qty * oi.price) DESC, p.id LIMIT 10"}
+{"id": "q047", "output": "SELECT p.name FROM order_items oi JOIN products p ON p.id = oi.product_id GROUP BY p.id ORDER BY sum(oi.qty * oi.price) DESC, p.id LIMIT 5"}
+{"id": "q048", "output": "SELECT p.name FROM order_items oi JOIN products p ON p.id = oi.product_id GROUP BY p.id ORDER BY sum(oi.qty * oi.price) DESC, p.id LIMIT 10"}
+{"id": "q049", "output": "SELECT p.name FROM order_items oi JOIN products p ON p.id = oi.product_id GROUP BY p.id ORDER BY sum(oi.qty * oi.price) DESC, p.id LIMIT 3"}
+{"id": "q050", "output": "SELECT name FROM products WHERE category = 'office'"}
+{"id": "q051", "output": "SELECT name FROM products WHERE category = 'sport'"}
+{"id": "q052", "output": "SELECT name FROM products WHERE category = 'toys'"}
+{"id": "q053", "output": "SELECT name FROM products WHERE category = 'garden'"}
+{"id": "q054", "output": "SELECT name FROM products WHERE category = 'books'"}
+{"id": "q055", "output": "SELECT name FROM products WHERE category = 'toys'"}
+{"id": "q056", "output": "SELECT name FROM products WHERE category = 'toys'"}
+{"id": "q057", "output": "SELECT name FROM products WHERE category = 'books'"}
+{"id": "q058", "output": "SELECT name FROM products WHERE category = 'kitchen'"}
+{"id": "q059", "output": "SELECT name FROM products WHERE category = 'garden'"}
+{"id": "q060", "output": "SELECT name FROM products WHERE category = 'sport'"}
+{"id": "q061", "output": "SELECT name FROM products WHERE stock < 20"}
+{"id": "q062", "output": "SELECT name FROM products WHERE stock < 10"}
+{"id": "q063", "output": "SELECT name FROM products WHERE stock < 100"}
+{"id": "q064", "output": "SELECT name FROM products WHERE stock < 100"}
+{"id": "q065", "output": "SELECT name FROM products WHERE stock < 20"}
+{"id": "q066", "output": "SELECT name FROM products WHERE stock < 10"}
+{"id": "q067", "output": "SELECT name FROM products WHERE stock < 10"}
+{"id": "q068", "output": "SELECT name FROM products WHERE stock < 20"}
+{"id": "q069", "output": "SELECT name FROM products WHERE stock < 100"}
+{"id": "q070", "output": "SELECT name FROM products WHERE stock < 50"}
+{"id": "q071", "output": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '02'"}
+{"id": "q072", "output": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '05'"}
+{"id": "q073", "output": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '01'"}
+{"id": "q074", "output": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '05'"}
+{"id": "q075", "output": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '03'"}
+{"id": "q076", "output": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '02'"}
+{"id": "q077", "output": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '01'"}
+{"id": "q078", "output": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '03'"}
+{"id": "q079", "output": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '09'"}
+{"id": "q080", "output": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '05'"}
+{"id": "q081", "output": "SELECT count(*) FROM orders WHERE strftime('%m', created_at) = '04'"}
+{"id": "q082", "output": "SELECT count(*) FROM shipments WHERE carrier = 'ups'"}
+{"id": "q083", "output": "SELECT count(*) FROM shipments WHERE carrier = 'acs'"}
+{"id": "q084", "output": "SELECT count(*) FROM shipments WHERE carrier = 'dhl'"}
+{"id": "q085", "output": "SELECT count(*) FROM shipments WHERE carrier = 'acs'"}
+{"id": "q086", "output": "SELECT count(*) FROM shipments WHERE carrier = 'ups'"}
+{"id": "q087", "output": "SELECT count(*) FROM shipments WHERE carrier = 'elta'"}
+{"id": "q088", "output": "SELECT count(*) FROM shipments WHERE carrier = 'ups'"}
+{"id": "q089", "output": "SELECT count(*) FROM shipments WHERE carrier = 'acs'"}
+{"id": "q090", "output": "SELECT count(*) FROM shipments WHERE carrier = 'dhl'"}
+{"id": "q091", "output": "SELECT count(*) FROM shipments WHERE carrier = 'elta'"}
+{"id": "q092", "output": "SELECT count(*) FROM shipments WHERE carrier = 'elta' AND status = 'delivered'"}
+{"id": "q093", "output": "SELECT count(*) FROM shipments WHERE carrier = 'ups' AND status = 'delivered'"}
+{"id": "q094", "output": "SELECT count(*) FROM shipments WHERE carrier = 'acs' AND status = 'delivered'"}
+{"id": "q095", "output": "SELECT count(*) FROM shipments WHERE carrier = 'elta' AND status = 'delivered'"}
+{"id": "q096", "output": "SELECT count(*) FROM shipments WHERE carrier = 'acs' AND status = 'delivered'"}
+{"id": "q097", "output": "SELECT count(*) FROM shipments WHERE carrier = 'ups' AND status = 'delivered'"}
+{"id": "q098", "output": "SELECT count(*) FROM shipments WHERE carrier = 'dhl' AND status = 'delivered'"}
+{"id": "q099", "output": "SELECT count(*) FROM shipments WHERE carrier = 'ups' AND status = 'delivered'"}
+{"id": "q100", "output": "SELECT count(*) FROM shipments WHERE carrier = 'elta' AND status = 'delivered'"}
+{"id": "q101", "output": "SELECT count(*) FROM shipments WHERE carrier = 'acs' AND status = 'delivered'"}
+{"id": "q102", "output": "SELECT name FROM customers WHERE id NOT IN (SELECT customer_id FROM orders)"}
+{"id": "q103", "output": "SELECT max(total) FROM orders"}
+{"id": "q104", "output": "SELECT count(*) FROM orders WHERE customer_id = 25"}
+{"id": "q105", "output": "SELECT count(*) FROM orders WHERE customer_id = 3"}
+{"id": "q106", "output": "SELECT count(*) FROM orders WHERE customer_id = 18"}
+{"id": "q107", "output": "SELECT count(*) FROM orders WHERE customer_id = 7"}
+{"id": "q108", "output": "SELECT count(*) FROM orders WHERE customer_id = 31"}
+{"id": "q109", "output": "SELECT count(*) FROM orders WHERE customer_id = 44"}
+{"id": "q110", "output": "SELECT count(*) FROM orders WHERE customer_id = 12"}
+{"id": "q111", "output": "SELECT count(*) FROM orders WHERE customer_id = 18"}
+{"id": "q112", "output": "SELECT count(*) FROM orders WHERE customer_id = 7"}
+{"id": "q113", "output": "SELECT count(*) FROM orders WHERE customer_id = 25"}
+{"id": "q114", "output": "SELECT count(*) FROM orders WHERE customer_id = 52"}
+{"id": "q115", "output": "SELECT c.country, sum(o.total) FROM orders o JOIN customers c ON c.id = o.customer_id GROUP BY c.country"}
+{"id": "q116", "output": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'toys'"}
+{"id": "q117", "output": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'books'"}
+{"id": "q118", "output": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'sport'"}
+{"id": "q119", "output": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'sport'"}
+{"id": "q120", "output": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'toys'"}
+{"id": "q121", "output": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'music'"}
+{"id": "q122", "output": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'toys'"}
+{"id": "q123", "output": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'pets'"}
+{"id": "q124", "output": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'office'"}
+{"id": "q125", "output": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'books'"}
+{"id": "q126", "output": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'kitchen'"}
+{"id": "q127", "output": "SELECT count(*) FROM orders WHERE total > 500"}
+{"id": "q128", "output": "SELECT count(*) FROM orders WHERE total > 100"}
+{"id": "q129", "output": "SELECT count(*) FROM orders WHERE total > 800"}
+{"id": "q130", "output": "SELECT count(*) FROM orders WHERE total > 100"}
+{"id": "q131", "output": "SELECT count(*) FROM orders WHERE total > 500"}
+{"id": "q132", "output": "SELECT count(*) FROM orders WHERE total > 250"}
+{"id": "q133", "output": "SELECT count(*) FROM orders WHERE total > 800"}
+{"id": "q134", "output": "SELECT count(*) FROM orders WHERE total > 100"}
+{"id": "q135", "output": "SELECT count(*) FROM orders WHERE total > 250"}
+{"id": "q136", "output": "SELECT count(*) FROM orders WHERE total > 500"}
+{"id": "q137", "output": "SELECT avg(price) FROM products WHERE category = 'books'"}
+{"id": "q138", "output": "SELECT avg(price) FROM products WHERE category = 'toys'"}
+{"id": "q139", "output": "SELECT avg(price) FROM products WHERE category = 'pets'"}
+{"id": "q140", "output": "SELECT avg(price) FROM products WHERE category = 'pets'"}
+{"id": "q141", "output": "SELECT avg(price) FROM products WHERE category = 'books'"}
+{"id": "q142", "output": "SELECT avg(price) FROM products WHERE category = 'toys'"}
+{"id": "q143", "output": "SELECT avg(price) FROM products WHERE category = 'garden'"}
+{"id": "q144", "output": "SELECT avg(price) FROM products WHERE category = 'pets'"}
+{"id": "q145", "output": "SELECT avg(price) FROM products WHERE category = 'toys'"}
+{"id": "q146", "output": "SELECT avg(price) FROM products WHERE category = 'office'"}
+{"id": "q147", "output": "SELECT avg(price) FROM products WHERE category = 'books'"}
+{"id": "q148", "output": "SELECT sum(qty) FROM order_items WHERE order_id = 66"}
+{"id": "q149", "output": "SELECT sum(qty) FROM order_items WHERE order_id = 93"}
+{"id": "q150", "output": "SELECT sum(qty) FROM order_items WHERE order_id = 42"}
+{"id": "q151", "output": "SELECT sum(qty) FROM order_items WHERE order_id = 42"}
+{"id": "q152", "output": "SELECT sum(qty) FROM order_items WHERE order_id = 93"}
+{"id": "q153", "output": "SELECT sum(qty) FROM order_items WHERE order_id = 5"}
+{"id": "q154", "output": "SELECT sum(qty) FROM order_items WHERE order_id = 5"}
+{"id": "q155", "output": "SELECT sum(qty) FROM order_items WHERE order_id = 120"}
+{"id": "q156", "output": "SELECT sum(qty) FROM order_items WHERE order_id = 17"}
+{"id": "q157", "output": "SELECT sum(qty) FROM order_items WHERE order_id = 42"}
+{"id": "q158", "output": "SELECT sum(qty) FROM order_items WHERE order_id = 188"}
+{"id": "q159", "output": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.id ORDER BY sum(o.total) DESC, c.id LIMIT 10"}
+{"id": "q160", "output": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.id ORDER BY sum(o.total) DESC, c.id LIMIT 5"}
+{"id": "q161", "output": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.id ORDER BY sum(o.total) DESC, c.id LIMIT 10"}
+{"id": "q162", "output": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.id ORDER BY sum(o.total) DESC, c.id LIMIT 3"}
+{"id": "q163", "output": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.id ORDER BY sum(o.total) DESC, c.id LIMIT 5"}
+{"id": "q164", "output": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.id ORDER BY sum(o.total) DESC, c.id LIMIT 3"}
+{"id": "q165", "output": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.id ORDER BY sum(o.total) DESC, c.id LIMIT 10"}
+{"id": "q166", "output": "SELECT id FROM orders WHERE status = 'paid' AND id NOT IN (SELECT order_id FROM shipments)"}
+{"id": "q167", "output": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '03'"}
+{"id": "q168", "output": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '02'"}
+{"id": "q169", "output": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '04'"}
+{"id": "q170", "output": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '01'"}
+{"id": "q171", "output": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '03'"}
+{"id": "q172", "output": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '06'"}
+{"id": "q173", "output": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '02'"}
+{"id": "q174", "output": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '08'"}
+{"id": "q175", "output": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '01'"}
+{"id": "q176", "output": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '04'"}
+{"id": "q177", "output": "SELECT count(*) FROM customers WHERE strftime('%m', created_at) = '05'"}
+{"id": "q178", "output": "SELECT name FROM products WHERE category = 'garden' ORDER BY price DESC, id LIMIT 1"}
+{"id": "q179", "output": "SELECT name FROM products WHERE category = 'music' ORDER BY price DESC, id LIMIT 1"}
+{"id": "q180", "output": "SELECT name FROM products WHERE category = 'kitchen' ORDER BY price DESC, id LIMIT 1"}
+{"id": "q181", "output": "SELECT name FROM products WHERE category = 'books' ORDER BY price DESC, id LIMIT 1"}
+{"id": "q182", "output": "SELECT name FROM products WHERE category = 'sport' ORDER BY price DESC, id LIMIT 1"}
+{"id": "q183", "output": "SELECT name FROM products WHERE category = 'pets' ORDER BY price DESC, id LIMIT 1"}
+{"id": "q184", "output": "SELECT name FROM products WHERE category = 'pets' ORDER BY price DESC, id LIMIT 1"}
+{"id": "q185", "output": "SELECT name FROM products WHERE category = 'garden' ORDER BY price DESC, id LIMIT 1"}
+{"id": "q186", "output": "SELECT name FROM products WHERE category = 'toys' ORDER BY price DESC, id LIMIT 1"}
+{"id": "q187", "output": "SELECT name FROM products WHERE category = 'office' ORDER BY price DESC, id LIMIT 1"}
+{"id": "q188", "output": "SELECT name FROM products WHERE category = 'books' ORDER BY price DESC, id LIMIT 1"}
+{"id": "q189", "output": "SELECT status FROM orders GROUP BY status"}
+{"id": "q190", "output": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'DE'"}
+{"id": "q191", "output": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'IT'"}
+{"id": "q192", "output": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'ES'"}
+{"id": "q193", "output": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'FR'"}
+{"id": "q194", "output": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'DE'"}
+{"id": "q195", "output": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'IT'"}
+{"id": "q196", "output": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'FR'"}
+{"id": "q197", "output": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'GR'"}
+{"id": "q198", "output": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'ES'"}
+{"id": "q199", "output": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'IT'"}
+{"id": "q200", "output": "SELECT count(*) FROM shipments s JOIN orders o ON o.id = s.order_id JOIN customers c ON c.id = o.customer_id WHERE c.country = 'DE'"}
+{"id": "q201", "output": "SELECT avg(qty) FROM order_items"}
+{"id": "q202", "output": "SELECT avg(qty) FROM order_items"}
+{"id": "q203", "output": "SELECT avg(o.total) FROM orders o"}
+{"id": "q204", "output": "SELECT p.name FROM order_items oi JOIN products p ON p.id = oi.product_id GROUP BY p.id ORDER BY sum(oi.qty) LIMIT 1"}
+{"id": "q205", "output": "SELECT p.name FROM order_items oi JOIN products p ON p.id = oi.product_id GROUP BY p.id ORDER BY sum(oi.qty) DESC, p.id LIMIT 1"}
+{"id": "q206", "output": "SELECT p.name FROM products p JOIN order_items oi ON oi.product_id = p.id GROUP BY p.id ORDER BY sum(oi.qty) LIMIT 1"}
+{"id": "q207", "output": "SELECT c.country FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.country ORDER BY count(*) DESC, c.id LIMIT 1"}
+{"id": "q208", "output": "SELECT c.country FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.id ORDER BY count(*) DESC, c.id LIMIT 1"}
+{"id": "q209", "output": "SELECT c.country FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.country ORDER BY count(*) DESC, c.country LIMIT 1"}
+{"id": "q210", "output": "SELECT sum(total) FROM orders WHERE strftime('%m', created_at) = '04'"}
+{"id": "q211", "output": "SELECT sum(total) FROM orders WHERE strftime('%m', created_at) = '06'"}
+{"id": "q212", "output": "SELECT sum(total) FROM orders WHERE strftime('%m', created_at) = '08'"}
+{"id": "q213", "output": "SELECT sum(total) FROM orders WHERE strftime('%m', created_at) = '03'"}
+{"id": "q214", "output": "SELECT sum(total) FROM orders WHERE strftime('%m', created_at) = '02'"}
+{"id": "q215", "output": "SELECT sum(total) FROM orders WHERE strftime('%m', created_at) = '03'"}
+{"id": "q216", "output": "SELECT sum(total) FROM orders WHERE strftime('%m', created_at) = '08'"}
+{"id": "q217", "output": "SELECT sum(total) FROM orders WHERE strftime('%m', created_at) = '09'"}
+{"id": "q218", "output": "SELECT sum(total) FROM orders WHERE strftime('%m', created_at) = '06'"}
+{"id": "q219", "output": "SELECT sum(total) FROM orders WHERE strftime('%m', created_at) = '01'"}
+{"id": "q220", "output": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'toys'"}
+{"id": "q221", "output": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE strftime('%m', o.created_at) = '08'"}
+{"id": "q222", "output": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE o.status = 'cancelled' AND strftime('%m', o.created_at) = '04'"}
+{"id": "q223", "output": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE p.category = 'toys'"}
+{"id": "q224", "output": "SELECT sum(oi.qty * oi.price) FROM order_items oi JOIN products p ON p.id = oi.product_id WHERE o.status = 'cancelled' AND strftime('%m', o.created_at) = '03'"}
+{"id": "q225", "output": "SELECT carrier FROM shipments GROUP BY carrier ORDER BY count(*) DESC, carrier LIMIT 1"}
+{"id": "q226", "output": "SELECT c.name FROM carriers c JOIN shipments s ON s.carrier = c.id GROUP BY c.id ORDER BY count(*) DESC, c.id LIMIT 1"}
+{"id": "q227", "output": "SELECT c.name FROM customers c JOIN shipments s ON s.customer_id = c.id GROUP BY c.id ORDER BY count(*) DESC, c.id LIMIT 1"}
+{"id": "q228", "output": "SELECT country FROM customers WHERE id = (SELECT customer_id FROM orders WHERE id = 42)"}
+{"id": "q229", "output": "SELECT country FROM customers WHERE id = (SELECT customer_id FROM orders WHERE id = 17)"}
+{"id": "q230", "output": "SELECT country FROM customers WHERE id = (SELECT customer_id FROM orders WHERE id = 151)"}
+{"id": "q231", "output": "SELECT country FROM customers WHERE id = (SELECT customer_id FROM orders WHERE id = 188)"}
+{"id": "q232", "output": "SELECT country FROM customers WHERE id = (SELECT customer_id FROM orders WHERE id = 120)"}
+{"id": "q233", "output": "SELECT c.country FROM customers c JOIN orders o ON o.customer_id = c.id WHERE o.id = 93"}
+{"id": "q234", "output": "SELECT country FROM customers WHERE id = (SELECT customer_id FROM orders WHERE id = 188)"}
+{"id": "q235", "output": "SELECT c.country FROM customers c JOIN orders o ON o.customer_id = c.id WHERE o.id = 66"}
+{"id": "q236", "output": "SELECT c.country FROM customers c JOIN orders o ON o.customer_id = c.id WHERE o.id = 151"}
+{"id": "q237", "output": "SELECT c.country FROM customers c JOIN orders o ON o.customer_id = c.id WHERE o.id = 17"}
+{"id": "q238", "output": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id WHERE o.id = 5"}
+{"id": "q239", "output": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id WHERE o.id = 17"}
+{"id": "q240", "output": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id WHERE o.id = 93"}
+{"id": "q241", "output": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id WHERE o.id = 42"}
+{"id": "q242", "output": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id WHERE o.id = 66"}
+{"id": "q243", "output": "SELECT sum(qty) FROM order_items WHERE product_id = (SELECT id FROM products WHERE category = 'pets')"}
+{"id": "q244", "output": "SELECT sum(qty) FROM order_items WHERE product_id IN (SELECT id FROM products WHERE category = 'kitchen')"}
+{"id": "q245", "output": "SELECT sum(qty) FROM order_items WHERE product_id IN (SELECT id FROM products WHERE category = 'toys')"}
+{"id": "q246", "output": "SELECT sum(qty) FROM order_items WHERE product_id IN (SELECT id FROM products WHERE category = 'office')"}
+{"id": "q247", "output": "SELECT sum(qty) FROM order_items WHERE product_id IN (SELECT id FROM products WHERE category = 'garden')"}
+{"id": "q248", "output": "SELECT sum(qty) FROM order_items WHERE product_id = (SELECT id FROM products WHERE category = 'pets')"}
+{"id": "q249", "output": "SELECT sum(qty) FROM order_items WHERE product_id = (SELECT id FROM products WHERE category = 'books')"}
+{"id": "q250", "output": "SELECT sum(qty) FROM order_items WHERE product_id IN (SELECT id FROM products WHERE category = 'toys')"}
+{"id": "q251", "output": "SELECT sum(qty) FROM order_items WHERE product_id = (SELECT id FROM products WHERE category = 'music')"}
+{"id": "q252", "output": "SELECT sum(qty) FROM order_items WHERE product_id = (SELECT id FROM products WHERE category = 'garden')"}
+{"id": "q253", "output": "SELECT sum(qty) FROM order_items WHERE product_id IN (SELECT id FROM products WHERE category = 'office')"}
+{"id": "q254", "output": "SELECT sum(qty) FROM order_items WHERE product_id IN (SELECT id FROM products WHERE category = 'music')"}
+{"id": "q255", "output": "SELECT sum(qty) FROM order_items WHERE product_id IN (SELECT id FROM products WHERE category = 'books')"}
+{"id": "q256", "output": "SELECT sum(qty) FROM order_items WHERE product_id IN (SELECT id FROM products WHERE category = 'toys')"}
+{"id": "q257", "output": "SELECT sum(qty) FROM order_items WHERE product_id = (SELECT id FROM products WHERE category = 'pets')"}
+{"id": "q258", "output": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id WHERE c.country = 'ES' GROUP BY c.id"}
+{"id": "q259", "output": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id WHERE c.country = 'FR' GROUP BY c.id"}
+{"id": "q260", "output": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id WHERE c.country = 'DE' GROUP BY c.id"}
+{"id": "q261", "output": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id WHERE c.country = 'GR' GROUP BY c.id"}
+{"id": "q262", "output": "SELECT c.name FROM customers c JOIN orders o ON o.customer_id = c.id WHERE c.country = 'NL' GROUP BY c.id"}
+{"id": "q263", "output": "SELECT avg(o.id) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'IT'"}
+{"id": "q264", "output": "SELECT avg(o.id) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'DE'"}
+{"id": "q265", "output": "SELECT avg(o.id) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'GR'"}
+{"id": "q266", "output": "SELECT avg(o.id) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'NL'"}
+{"id": "q267", "output": "SELECT avg(o.id) FROM orders o JOIN customers c ON c.id = o.customer_id WHERE c.country = 'FR'"}
+{"id": "q268", "output": "SELECT count(*) FROM orders WHERE customer_id IN (SELECT id FROM customers WHERE country = 'ES')"}
+{"id": "q269", "output": "SELECT count(*) FROM orders WHERE customer_id IN (SELECT id FROM customers WHERE country = 'FR')"}
+{"id": "q270", "output": "SELECT count(*) FROM orders WHERE customer_id IN (SELECT id FROM customers WHERE country = 'NL')"}
+{"id": "q271", "output": "SELECT count(*) FROM orders WHERE customer_id IN (SELECT id FROM customers WHERE country = 'DE')"}
+{"id": "q272", "output": "SELECT count(*) FROM orders WHERE customer_id IN (SELECT id FROM customers WHERE country = 'IT')"}
