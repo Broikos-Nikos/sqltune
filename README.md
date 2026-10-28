@@ -4,6 +4,8 @@
 
 Qwen2.5-Coder-1.5B-Instruct already writes SQL. This measures what a LoRA adapter, trained on one shop's questions, adds to it, and whether what it adds holds on questions it was never shown. Every answer is run on the shop's database and counts as right only if it returns the right rows.
 
+**[The page is live.](https://broikos-nikos.github.io/sqltune/)** Every answer both models gave, filtered by what tuning fixed and what it broke.
+
 ![The page: base against tuned on the three parts of the test, every answer with its SQL](docs/sqltune.png)
 
 ## What it measured
